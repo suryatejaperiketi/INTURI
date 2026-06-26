@@ -1,5 +1,5 @@
 import React from "react";
-import banner1img from "../essets/pic1.png";
+import banner1img from "../essets/Tallivandhanam1.jpg";
 import banner2img from "../essets/pic2.png";
 import banner3img  from "../essets/pic3.png";
 import "../styles/Home.css";
