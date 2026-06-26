@@ -1,0 +1,92 @@
+import React from "react";
+import "../../styles/FreeBus.css";
+
+import img1 from "../../essets/Tallivandhanam.jpg";
+import img2 from "../../essets/Tallivandhanam1.jpg";
+import img3 from "../../essets/Tallivandhanam3.jpg";
+import img4 from "../../essets/Tallivandhanam2.jpg";
+
+function ThallikiVandanam() {
+  const gallery = [img1, img2, img3, img4];
+
+  return (
+    <section className="freebus-section">
+      <div className="scheme-card">
+        <div className="scheme-header">
+          <div className="scheme-icon">👩‍👧</div>
+
+          <div>
+            <h2>Talliki Vandanam</h2>
+            <p className="subtitle">Financial Assistance for Farmers</p>
+
+            <span className="scheme-badge">₹15,000 per Child / Year</span>
+          </div>
+        </div>
+
+        <p className="scheme-description">
+          Talliki Vandanam is a flagship welfare initiative of the Government of
+          Andhra Pradesh that provides ₹15,000 annually for every school-going
+          child to eligible mothers or guardians. The scheme aims to reduce the
+          financial burden of education, encourage regular school attendance,
+          improve learning opportunities, and empower mothers to support their
+          children's education while promoting higher enrollment and reducing
+          school dropouts across the state.
+        </p>
+
+        <div className="scheme-info">
+          <div className="info-item">
+            <span>👩‍👧</span>
+            <div>
+              <h5>Beneficiaries</h5>
+              <p>Eligible Mothers & School-going Children</p>
+            </div>
+          </div>
+
+          <div className="info-item">
+            <span>🎓</span>
+            <div>
+              <h5>Benefit</h5>
+              <p>₹15,000 per Child / Year</p>
+            </div>
+          </div>
+
+          <div className="info-item">
+            <span>📅</span>
+            <div>
+              <h5>Launched On</h5>
+              <p>12 June 2025</p>
+            </div>
+          </div>
+
+          <div className="info-item">
+            <span>📚</span>
+            <div>
+              <h5>Category</h5>
+              <p>Education & Family Welfare Scheme</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="gallery-card">
+        <div className="gallery-heading">
+          <h3>Gallery</h3>
+          <p>
+            Distribution and implementation of Talliki Vandanam across Andhra
+            Pradesh.
+          </p>
+        </div>
+
+        <div className="gallery-grid">
+          {gallery.map((image, index) => (
+            <div className="gallery-item" key={index}>
+              <img src={image} alt={`Gallery ${index + 1}`} />
+            </div>
+          ))}
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default ThallikiVandanam;

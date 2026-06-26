@@ -1,0 +1,372 @@
+.about-section {
+    background-color: #FFF7D9 !important;
+    overflow-x: hidden;
+}
+
+/* Hero Section */
+
+.about-main-container {
+    margin-top: 80px;
+}
+
+.about-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-title {
+    font-size: 3.5rem;
+    color: #FFD129 !important;
+    font-weight: 700;
+}
+
+.about-paragraph {
+    font-size: 1.2rem;
+    font-weight: 300;
+    color: #FFD129;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.about-para {
+    font-weight: bold;
+    color: #fff;
+}
+
+/* About Content */
+
+.about-content {
+    background-color: #FFF7D9 !important;
+    border: none !important;
+    /* margin: 40px 20px; */
+}
+
+.about1-content {
+    padding: 0px 20px;
+}
+
+.about1-title {
+    font-size: 3.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.about1-para {
+    font-size: 1.2rem;
+    line-height: 1.8;
+}
+
+/* Location Section */
+
+.location-container {
+    border: 2px solid #FFD129;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.location-icon-container {
+    background-color: #FFD129;
+    border-radius: 10%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    margin-top: 13px;
+}
+
+.location-icon {
+    color: #FFF7D9;
+    font-size: 2rem;
+}
+
+.location-text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+/* About Image */
+
+.abou1-pic {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+/* Achievement Section */
+
+.achievements-section {
+    background-color: #F7F4ED;
+}
+
+.achievement-item {
+    text-align: center;
+    border-right: 1px solid #bebbbb;
+    padding: 15px;
+}
+
+.achievement-item:last-child {
+    border-right: none;
+}
+
+.achievement-item h4 {
+    font-size: 40px;
+}
+
+.ache-icons {
+    color: #FFD129;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.achehead {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 30px;
+}
+
+/* Statistics Cards */
+
+.about-card1 {
+    border: none;
+    overflow: hidden;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+.about-card1:hover {
+    transform: translateY(-5px);
+}
+
+.about-card-image {
+    height: 220px;
+    object-fit: cover;
+    opacity: 0.6;
+}
+
+.about-card-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+}
+
+.about-card1:hover .about-card-image {
+    opacity: 0.8;
+}
+
+.about-card1:hover .about-card-title {
+    color: #FFD129 !important;
+}
+
+.about-card1:hover .about-card-para {
+    color: #FFD129 !important;
+}
+
+.about-card-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+.about-card-para {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #ffffff !important;
+}
+
+/* ==========================
+   Large Tablet
+========================== */
+
+@media (max-width: 992px) {
+
+    .about-main-container {
+        margin-top: 40px;
+    }
+
+    .about-content {
+        margin: 20px;
+    }
+
+    .about-title {
+        font-size: 2.8rem;
+    }
+
+    .about1-title {
+        font-size: 3rem;
+        text-align: center;
+    }
+
+    .about1-para {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .abou1-pic {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .achievement-item {
+        border-right: none;
+        margin-bottom: 20px;
+    }
+}
+
+/* ==========================
+   Tablet & Mobile
+========================== */
+
+@media (max-width: 768px) {
+
+    .about-image {
+        height: 250px;
+    }
+
+    .about-main-container {
+        margin-top: 20px;
+    }
+
+    .about-content {
+        margin: 15px;
+    }
+
+    .about-title {
+        font-size: 2rem;
+    }
+
+    .about-paragraph {
+        font-size: 1rem;
+        padding: 0 10px;
+    }
+
+    .about1-content {
+        padding: 20px 10px;
+        text-align: center;
+    }
+
+    .about1-title {
+        font-size: 2rem;
+    }
+
+    .about1-para {
+        font-size: 1rem;
+    }
+
+    .abou1-pic {
+        height: auto;
+    }
+
+    .about-card-image {
+        height: 180px;
+    }
+
+    .about-card-title {
+        font-size: 1.3rem;
+    }
+
+    .about-card-para {
+        font-size: 0.9rem;
+    }
+
+    .achievement-item {
+        border-right: none !important;
+        margin-bottom: 25px;
+    }
+
+    .ache-icons {
+        font-size: 32px;
+    }
+}
+
+/* ==========================
+   Small Mobile
+========================== */
+
+@media (max-width: 576px) {
+
+    .about-image {
+        height: 220px;
+    }
+
+    .about-title {
+        font-size: 1.8rem;
+    }
+
+    .about-paragraph {
+        font-size: 0.95rem;
+    }
+
+    .about1-title {
+        font-size: 1.8rem;
+    }
+
+    .about1-para {
+        font-size: 0.95rem;
+    }
+
+    .about-card-image {
+        height: 160px;
+    }
+
+    .about-card-title {
+        font-size: 1.2rem;
+    }
+
+    .about-card-para {
+        font-size: 0.85rem;
+    }
+
+    .ache-icons {
+        font-size: 28px;
+    }
+}
+
+/* ==========================
+   Extra Small Mobile
+========================== */
+
+@media (max-width: 400px) {
+
+    .about-image {
+        height: 180px;
+    }
+
+    .about-title {
+        font-size: 1.5rem;
+    }
+
+    .about-paragraph {
+        font-size: 0.85rem;
+    }
+
+    .about1-title {
+        font-size: 1.5rem;
+    }
+
+    .about1-para {
+        font-size: 0.85rem;
+    }
+
+    .about-card-image {
+        height: 140px;
+    }
+
+    .about-card-title {
+        font-size: 1rem;
+    }
+
+    .about-card-para {
+        font-size: 0.75rem;
+    }
+
+    .ache-icons {
+        font-size: 24px;
+    }
+}
