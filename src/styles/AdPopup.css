@@ -1,0 +1,233 @@
+/* ── Overlay ── */
+.popup-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.82);
+  z-index: 9999999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  animation: fadeIn 0.3s ease;
+}
+ 
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+ 
+/* ── Popup Box ── */
+.popup-box {
+  background: #fff;
+  border-radius: 20px;
+  width: 100%;
+  max-width: 520px;
+ 
+  /* KEY FIX: popup never exceeds screen height */
+  height: 92vh;
+  max-height: 92vh;
+ 
+  /* KEY FIX: flex column so image stretches to fill gap */
+  display: flex;
+  flex-direction: column;
+ 
+  overflow: hidden;  /* no scroll — everything fits inside */
+  position: relative;
+  animation: slideUp 0.4s ease;
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.5);
+}
+ 
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(40px) scale(0.95); }
+  to   { opacity: 1; transform: translateY(0)    scale(1);    }
+}
+ 
+/* ── Close / Countdown Button ── */
+.popup-close {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  background: rgba(255, 255, 255, 0.95);
+  font-size: 14px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s;
+  line-height: 1;
+  z-index: 20;
+  cursor: default;
+}
+ 
+.popup-close.disabled {
+  color: #888;
+  border-color: #ddd;
+  background: rgba(255, 255, 255, 0.85);
+}
+ 
+.popup-close.active {
+  color: #111;
+  cursor: pointer;
+  border-color: #FFD129;
+  background: #FFD129;
+}
+ 
+.popup-close.active:hover {
+  background: #DBC42E;
+  border-color: #DBC42E;
+}
+ 
+/* ── Top Banner ── */
+.popup-banner {
+  background: linear-gradient(135deg, #c2410c, #ef4444, #b91c1c);
+  padding: 8px 16px;
+  text-align: center;
+  /* fixed height — does not grow */
+  flex-shrink: 0;
+}
+ 
+.popup-banner-lights {
+  display: flex;
+  justify-content: center;
+  gap: 11px;
+  margin-bottom: 3px;
+}
+ 
+.popup-banner-lights:last-child {
+  margin-bottom: 0;
+  margin-top: 3px;
+}
+ 
+.bulb {
+  width: 10px;
+  height: 14px;
+  border-radius: 50% 50% 45% 45%;
+  display: inline-block;
+  animation: blink 1s infinite alternate;
+  animation-delay: calc(var(--i) * 0.09s);
+}
+ 
+.bulb:nth-child(odd)  { background: #FFD129; }
+.bulb:nth-child(even) { background: #ffffff; }
+.bulb:nth-child(3n)   { background: #86efac; }
+.bulb:nth-child(4n)   { background: #93c5fd; }
+ 
+@keyframes blink {
+  from { opacity: 1; }
+  to   { opacity: 0.2; }
+}
+ 
+.popup-banner-text {
+  font-size: 18px;
+  font-weight: 900;
+  color: #fff;
+  margin: 3px 0;
+  letter-spacing: 3px;
+  text-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+}
+ 
+/* ── Candidate Image ── */
+.popup-image-wrap {
+  /* KEY FIX: flex-grow fills ALL remaining space between banner and content */
+  flex: 1;
+  min-height: 0;       /* allows shrinking inside flex container */
+  width: 100%;
+  background: linear-gradient(180deg,
+    #7c2d12 0%,
+    #ea580c 18%,
+    #fbbf24 52%,
+    #fef3c7 82%,
+    #fff 100%
+  );
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+ 
+.popup-candidate-img {
+  /* KEY FIX: fills the image-wrap height, never overflows */
+  width: 150% !important;
+  height: 100%;
+  object-fit: contain;    /* full image, no crop */
+  object-position: center bottom;
+  display: block;
+}
+ 
+/* ── Name / Designation ── */
+.popup-content {
+  /* fixed height — does not grow */
+  flex-shrink: 0;
+  padding: 10px 20px 14px;
+  text-align: center;
+  background: #fff;
+}
+ 
+.popup-title {
+  font-size: 20px;
+  font-weight: 900;
+  color: #111;
+  margin: 0 0 3px;
+  line-height: 1.2;
+}
+ 
+.popup-subtitle {
+  font-size: 13px;
+  font-weight: 700;
+  color: #ea580c;
+  margin: 0 0 8px;
+  letter-spacing: 0.5px;
+}
+ 
+.popup-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+ 
+.popup-divider span {
+  color: #FFD129;
+  font-size: 15px;
+}
+ 
+/* ══════════════════════════
+   RESPONSIVE
+══════════════════════════ */
+ 
+@media (max-width: 640px) {
+  .popup-box         { border-radius: 16px; height: 90vh; max-height: 90vh; }
+  .popup-banner-text { font-size: 16px; letter-spacing: 2px; }
+  .popup-title       { font-size: 18px; }
+  .popup-subtitle    { font-size: 12px; }
+  .popup-content     { padding: 8px 16px 12px; }
+}
+ 
+@media (max-width: 480px) {
+  .popup-overlay     { padding: 8px; }
+  .popup-box         { border-radius: 14px; height: 88vh; max-height: 88vh; }
+  .popup-banner      { padding: 6px 10px; }
+  .popup-banner-text { font-size: 14px; letter-spacing: 1.5px; }
+  .popup-banner-lights { gap: 8px; }
+  .bulb              { width: 8px; height: 12px; }
+  .popup-title       { font-size: 16px; }
+  .popup-subtitle    { font-size: 12px; }
+  .popup-content     { padding: 7px 14px 10px; }
+}
+ 
+@media (max-width: 390px) {
+  .popup-box         { height: 86vh; max-height: 86vh; }
+  .popup-banner-text { font-size: 13px; }
+  .popup-title       { font-size: 14px; }
+  .popup-content     { padding: 6px 12px 8px; }
+}
+ 
+@media (max-width: 360px) {
+  .popup-title    { font-size: 13px; }
+  .popup-subtitle { font-size: 11px; }
+}

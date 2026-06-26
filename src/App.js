@@ -1,4 +1,5 @@
 import { Routes, Route } from 'react-router-dom';
+import { useState, useEffect } from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
 import Landingpage from './components/Landingpage';
@@ -14,11 +15,21 @@ import AnnadathaSukhibhava from './components/SuperSix/AnnadathaSukhibhava';
 import DeepamGas from './components/SuperSix/DeepamGas';
 import FreeBus from './components/SuperSix/FreeBus';
 import ThallikiVandanam from './components/SuperSix/ThallikiVandanam';
+import AdPopup from './components/AdPopup';
 
 
 function App() {
+  const [showPopup, setShowPopup] = useState(false);
+ 
+  useEffect(() => {
+    // Show popup after 500ms so page loads first
+    const timer = setTimeout(() => setShowPopup(true), 500);
+    return () => clearTimeout(timer);
+  }, []);
   return (
-    <div>
+        <div>
+      {showPopup && <AdPopup onClose={() => setShowPopup(false)} />}
+   
       <div className='navbar-main'>
         <Navbar />
       </div >
