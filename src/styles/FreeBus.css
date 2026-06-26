@@ -55,8 +55,8 @@
 .scheme-description{
     margin-top:28px;
     line-height:1.8;
-    color:#666;
-    font-size:16px;
+    color:#222;
+    font-size:17px;
 }
 
 .scheme-info{
@@ -85,13 +85,13 @@
 
 .info-item h5{
     margin:0;
-    color:#444;
+    color:#333;
     font-size:15px;
 }
 
 .info-item p{
     margin-top:4px;
-    color:#777;
+    color:#444;
     font-size:14px;
 }
 
@@ -113,7 +113,8 @@
 
 .gallery-heading p{
     margin-top:5px;
-    color:#777;
+    color:#555;
+    font-size: 16px;
 }
 
 .gallery-grid{

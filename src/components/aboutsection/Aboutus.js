@@ -1,46 +1,71 @@
 import React from "react";
 import "../../styles/About.css";
 import Aboutimpact from "./Aboutimpact";
-import aboutus from "../../essets/aboutus.png";
 import about1 from "../../essets/inturi.png";
-import aboutcard1 from "../../essets/aboutcard1.png";
-import aboutcard2 from "../../essets/aboutcard2.png";
-import aboutcard3 from "../../essets/aboutcard3.png";
 import Footer from "../Footer";
+import waterirrigationimg from "../../essets/waterirrigation.png";
+import road from "../../essets/road.png";
+import port  from "../../essets/ramayanapatnamport.png";
+import msmepark from "../../essets/msmepark.png";
+import hospital from "../../essets/hospital.png";
+
 
 import { FaRoad, FaHeartbeat } from "react-icons/fa";
 import { IoWaterOutline } from "react-icons/io5";
 
 const Aboutus = () => {
+
+  const developmentData = [
+  {
+    id: 1,
+    title: "WATER & IRRIGATION",
+    image: waterirrigationimg,
+    icon: "💧",
+    color: "#0d6efd",
+    desc: "Championing projects that brought water, hope and prosperity to farmers.",
+  },
+  {
+    id: 2,
+    title: "INFRASTRUCTURE",
+    image: road,
+    color: "#28a745",
+    icon: "🛣️",
+    desc: "Building roads, bridges and connectivity for a stronger Kandukur.",
+  },
+  {
+    id: 3,
+    title: "RAMAYAPATNAM",
+    image: port,
+    icon: "⚓",
+    color: "#rgb(59 179 194)",
+    desc: "Promoting Ramayapatnam as a thriving coastal hub for fisheries and tourism.",
+  },
+  {
+    id: 4,
+    title: "MSME PARK",
+    image: msmepark,
+    icon: "🏭",
+    color: "#481b5c",
+    desc: "Creating jobs and encouraging entrepreneurship through MSME Park.",
+  },
+  {
+    id: 5,
+    title: "HEALTHCARE",
+    image: hospital,
+    icon: "🏥",
+    color: "#f44336",
+    desc: "Improving healthcare facilities and ensuring better lives for all.",
+  },
+];
+
   return (
     <>
+    
       <div className="about-section about-main-container">
-
-        {/* Banner Section */}
-        <div className="card text-bg-dark border-0">
-          <img
-            src={aboutus}
-            className="card-img about-image"
-            alt="About Banner"
-          />
-
-          <div className="card-img-overlay d-flex flex-column justify-content-center align-items-center text-center">
-            <p className="about-para">Biography Archive</p>
-
-            <h1 className="about-title">
-              A Journey of Leadership.
-            </h1>
-
-            <p className="about-paragraph">
-              "Public service is a sacred commitment to ensure every citizen of
-              Kandukuru walks on the path of progress."
-            </p>
-          </div>
-        </div>
 
         {/* About Content */}
         <div className="card mb-3 about-content">
-          <div className="row g-4 align-items-center">
+          <div className="row g-4 align-items-center p-3">
 
             <div className="col-lg-5 col-md-12 col-12">
               <img
@@ -106,73 +131,51 @@ const Aboutus = () => {
           </div>
         </div>
 
-        {/* Statistics Cards */}
-        <div className="container text-center">
-          <div className="row g-4">
 
-            <div className="col-lg-4 col-md-4 col-12">
-              <div className="card text-bg-dark about-card1">
-                <img
-                  src={aboutcard1}
-                  className="card-img about-card-image"
-                  alt="Families Served"
-                />
+ <section className="development-section">
 
-                <div className="card-img-overlay about-card-content">
-                  <h5 className="about-card-title">
-                    50,000+
-                  </h5>
+      {/* First Row */}
+      <div className="row-one">
+        {developmentData.slice(0, 3).map((item) => (
+          <div className="card-about" key={item.id}>
+            <img src={item.image} alt={item.title} />
 
-                  <p className="about-card-para">
-                    Families Served
-                  </p>
-                </div>
-              </div>
+            <div className="icon-circle"
+             style={{ backgroundColor: item.color }}>
+              {item.icon}
             </div>
 
-            <div className="col-lg-4 col-md-4 col-12">
-              <div className="card text-bg-dark about-card1">
-                <img
-                  src={aboutcard2}
-                  className="card-img about-card-image"
-                  alt="Community Projects"
-                />
+            <h3>{item.title}</h3>
 
-                <div className="card-img-overlay about-card-content">
-                  <h5 className="about-card-title">
-                    25+
-                  </h5>
-
-                  <p className="about-card-para">
-                    Community Projects
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div className="col-lg-4 col-md-4 col-12">
-              <div className="card text-bg-dark about-card1">
-                <img
-                  src={aboutcard3}
-                  className="card-img about-card-image"
-                  alt="Welfare Schemes"
-                />
-
-                <div className="card-img-overlay about-card-content">
-                  <h5 className="about-card-title">
-                    100+
-                  </h5>
-
-                  <p className="about-card-para">
-                    Welfare Schemes
-                  </p>
-                </div>
-              </div>
-            </div>
-
+            <p>{item.desc}</p>
           </div>
-        </div>
+        ))}
+      </div>
 
+      {/* Second Row */}
+      <div className="row-two">
+        {developmentData.slice(3).map((item) => (
+          <div className="card-about" key={item.id}>
+            <img src={item.image} alt={item.title} />
+
+            <div className="icon-circle"
+            style={{ backgroundColor: item.color }}>
+              {item.icon}
+            </div>
+
+            <h3>{item.title}</h3>
+
+            <p>{item.desc}</p>
+          </div>
+        ))}
+      </div>
+
+    </section>
+
+
+
+
+      
         <Aboutimpact />
         <Footer />
       </div>
