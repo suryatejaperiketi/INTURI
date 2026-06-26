@@ -66,13 +66,13 @@ const schemes = [
     cls: "sc5",
   },
   {
-    icon: "💼",
-    name: "Yuva Galam",
-    path: "/unemployement-allowance",
-    sub: "Youth Empowerment Fund",
-    badge: "₹3,000 / month",
-    cls: "sc6",
-  },
+  icon: "🍱",
+  name: "Anna Canteen",
+  path: "/anna-canteen",
+  sub: "Affordable Meals for Everyone",
+  badge: "₹5 Meal",
+  cls: "sc6",
+}
 ];
 
 const Navbar = () => {

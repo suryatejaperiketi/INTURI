@@ -1,11 +1,11 @@
 import React from "react";
 import "../../styles/About.css";
 import Aboutimpact from "./Aboutimpact";
-import about1 from "../../essets/inturi.png";
+import about1 from "../../essets/inturi.jpg";
 import Footer from "../Footer";
 import waterirrigationimg from "../../essets/waterirrigation.png";
 import road from "../../essets/road.png";
-import port  from "../../essets/ramayanapatnamport.png";
+import port  from "../../essets/port1.png";
 import msmepark from "../../essets/msmepark.png";
 import hospital from "../../essets/hospital.png";
 
@@ -38,7 +38,8 @@ const Aboutus = () => {
     image: port,
     icon: "⚓",
     color: "#rgb(59 179 194)",
-    desc: "Promoting Ramayapatnam as a thriving coastal hub for fisheries and tourism.",
+    desc: `₹1,615 crore Heavy Cargo Rail Terminal spread across 429 acres,
+    Boosting logistics, rail connectivity, and 1,300 employment opportunities.`,
   },
   {
     id: 4,
@@ -92,38 +93,7 @@ const Aboutus = () => {
                   that serves as a benchmark for regional development.
                 </p>
 
-                <div className="container text-center mt-4">
-                  <div className="row g-4">
-
-                    <div className="col-lg-4 col-md-4 col-12 achievement-item">
-                      <IoWaterOutline className="ache-icons" />
-                      <h5>Water & Irrigation</h5>
-                      <p>
-                        Championing projects that brought water, hope and
-                        prosperity to farmers.
-                      </p>
-                    </div>
-
-                    <div className="col-lg-4 col-md-4 col-12 achievement-item">
-                      <FaRoad className="ache-icons" />
-                      <h5>Infrastructure</h5>
-                      <p>
-                        Building roads, bridges and connectivity for a stronger
-                        Kandukuru.
-                      </p>
-                    </div>
-
-                    <div className="col-lg-4 col-md-4 col-12">
-                      <FaHeartbeat className="ache-icons" />
-                      <h5>Healthcare</h5>
-                      <p>
-                        Improving healthcare facilities and ensuring better
-                        lives for all.
-                      </p>
-                    </div>
-
-                  </div>
-                </div>
+                
 
               </div>
             </div>

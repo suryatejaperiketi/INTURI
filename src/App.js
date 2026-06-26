@@ -17,7 +17,7 @@ import FreeBus from './components/SuperSix/FreeBus';
 import ThallikiVandanam from './components/SuperSix/ThallikiVandanam';
 import AdPopup from './components/AdPopup';
 import AadabiddaNidhi from './components/SuperSix/AadabiddaNidhi';
-import UnemploymentAllowance from './components/SuperSix/UnemploymentAllowance ';
+import UnemploymentAllowance from './components/SuperSix/AnnaCanteen';
 
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
         <Route path='/deepam-gas' element={<DeepamGas/>} />
         <Route path='/free-bus' element={<FreeBus/>} />
         <Route path='/talliki-vandhanam' element={<ThallikiVandanam/>} />
-        <Route path='/unemployement-allowance' element={<UnemploymentAllowance/>} />
+        <Route path='/anna-canteen' element={<UnemploymentAllowance/>} />
       </Routes>
       </div>
     </div>

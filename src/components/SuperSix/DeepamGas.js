@@ -2,10 +2,10 @@ import React from "react";
 import "../../styles/FreeBus.css";
 import { Cylinder } from "lucide-react";
 
-import img1 from "../../essets/deepam1.jpg";
-import img2 from "../../essets/deepam2.jpg";
-import img3 from "../../essets/deepam5.jpg";
-import img4 from "../../essets/deepam4.jpg";
+import img1 from "../../essets/deepam1.webp";
+import img2 from "../../essets/deepam.png";
+import img3 from "../../essets/deepam2.jpg";
+import img4 from "../../essets/deepam3.jpg";
 
 function DeepamGas() {
   const gallery = [img1, img2, img3, img4];

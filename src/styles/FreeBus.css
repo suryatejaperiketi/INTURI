@@ -131,7 +131,7 @@
 
 .gallery-item img{
     width:100%;
-    height:250px;
+    height:260px;
     object-fit:cover;
     border-radius:12px;
     transition:.4s;
