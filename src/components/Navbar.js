@@ -344,10 +344,10 @@ useEffect(() => {
                   ACHIEVEMENTS
                   {isMobile && (
                     <span
-                      className={`ben-arrow ${showAchievements ? "open" : ""}`}
+                      className={`${showAchievements ? "open" : ""}`}
                       style={{ marginLeft: 8 }}
                     >
-                      ›
+                      
                     </span>
                   )}
                 </button>
@@ -392,9 +392,9 @@ useEffect(() => {
                     >
                       <span className="ben-label">BENEFICIARIES</span>
                       <span
-                        className={`ben-arrow ${showBeneficiary ? "open" : ""}`}
+                        className={` ${showBeneficiary ? "open" : ""}`}
                       >
-                        ›
+                        
                       </span>
                     </div>
 
@@ -426,10 +426,10 @@ useEffect(() => {
                   MULTIMEDIA
                   {isMobile && (
                     <span
-                      className={`ben-arrow ${showMultimedia ? "open" : ""}`}
+                      className={` ${showMultimedia ? "open" : ""}`}
                       style={{ marginLeft: 8 }}
                     >
-                      ›
+                      
                     </span>
                   )}
                 </button>
@@ -511,10 +511,10 @@ useEffect(() => {
                   OTHER TDP WINGS
                   {isMobile && (
                     <span
-                      className={`ben-arrow ${showWings ? "open" : ""}`}
+                      className={` ${showWings ? "open" : ""}`}
                       style={{ marginLeft: 8 }}
                     >
-                      ›
+                      
                     </span>
                   )}
                 </button>
@@ -546,7 +546,7 @@ useEffect(() => {
               </li>
 
               <li className="nav-item d-flex align-items-center">
-                <button className="btn appoint-btn" type="button">
+                <button className="appoint-btn" type="button">
                   Login
                 </button>
               </li>

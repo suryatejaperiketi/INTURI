@@ -13,6 +13,32 @@
 .navbar {
   position: relative !important;
 }
+
+.appoint-btn {
+  background: #d4af37;
+  color: white;
+  border: none;
+  padding: 8px 23px;
+  border-radius: 30px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  margin-left: 20px;
+}
+
+.appoint-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(212, 175, 55, 0.4);
+}
+
+@media(max-width:768px){
+  .appoint-btn {
+   padding: 5px 20px !important;
+}
+
+}
+
  
 .bg-color .nav-link,
 .bg-color .dropdown-toggle {
@@ -101,19 +127,7 @@
   text-align: left;
 }
  
-.ben-arrow {
-  font-size: 18px;
-  color: #DBC42E;
-  font-weight: 700;
-  line-height: 1;
-  margin-left: 8px;
-  transition: transform 0.25s ease;
-  display: inline-block;
-}
- 
-.ben-arrow.open {
-  transform: rotate(90deg);
-}
+
  
 /* ================================
    DESKTOP — schemes full-width fixed panel
