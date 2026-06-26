@@ -124,10 +124,10 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-  useEffect(() => {
-    scheduleCloseAll(0);
-    setNavShow(false);
-  }, [location.pathname]);
+useEffect(() => {
+  scheduleCloseAll(0);
+  setNavShow(false);
+}, [location.pathname, scheduleCloseAll]);
 
   /* ── outside click closes everything ── */
   useEffect(() => {
