@@ -193,3 +193,39 @@
 }
 
 }
+
+
+
+.coming-soon-page {
+    min-height: calc(100vh - 90px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f8f9fb;
+}
+
+.coming-card {
+    text-align: center;
+    padding: 50px;
+    border-radius: 20px;
+    background: #fff;
+    box-shadow: 0 15px 40px rgba(0,0,0,.12);
+    max-width: 500px;
+}
+
+.coming-card .icon {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+
+.coming-card h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.coming-card p {
+    color: #444;
+    font-size: 18px;
+    margin: 8px 0;
+}

@@ -68,7 +68,7 @@ const schemes = [
   {
     icon: "💼",
     name: "Yuva Galam",
-    path: "/unemployement",
+    path: "/unemployement-allowance",
     sub: "Youth Empowerment Fund",
     badge: "₹3,000 / month",
     cls: "sc6",
