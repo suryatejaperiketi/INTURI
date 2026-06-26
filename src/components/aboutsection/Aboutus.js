@@ -9,10 +9,6 @@ import port  from "../../essets/port1.png";
 import msmepark from "../../essets/msmepark.png";
 import hospital from "../../essets/hospital.png";
 
-
-import { FaRoad, FaHeartbeat } from "react-icons/fa";
-import { IoWaterOutline } from "react-icons/io5";
-
 const Aboutus = () => {
 
   const developmentData = [
