@@ -114,13 +114,15 @@ const Contact = () => {
                         <div class="col-md-12">
                             <h3 class="card-title">GOOGLE MAP</h3>
                             <iframe
+                                title="Google Map"
                                 src="https://maps.google.com/maps?q=INR%20TDP%20OFFICE%20KANDUKUR&t=k&z=20&output=embed"
                                 style={{ width: "100%", height: "70vh", border: 0 }}
                                 allowFullScreen
                                 loading="lazy"
                             />
                         </div>
-                    </div>
+                    </div>cls
+                    
                 </div>
             </div>
             <Footer />
