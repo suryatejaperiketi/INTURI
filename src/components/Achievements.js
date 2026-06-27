@@ -91,7 +91,7 @@ const Achievements = () => {
                 <div className="d-flex justify-content-center mb-4 align-items-center">
                 <input
                     type="text"
-                    placeholder="Search by Mandal....................."
+                    placeholder="Search by Mandal...."
                     className="form-control mb-3"
                 />
                 <button className="btn btn-primary mb-4 ms-2">

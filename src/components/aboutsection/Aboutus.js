@@ -100,8 +100,6 @@ const Aboutus = () => {
                   that serves as a benchmark for regional development.
                 </p>
 
-                
-
               </div>
             </div>
 
