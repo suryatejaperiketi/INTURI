@@ -8,6 +8,7 @@ import road from "../../essets/road.png";
 import port  from "../../essets/port1.png";
 import msmepark from "../../essets/msmepark.png";
 import hospital from "../../essets/hospital.png";
+import railway from "../../essets/port2.png";
 
 const Aboutus = () => {
 
@@ -30,10 +31,10 @@ const Aboutus = () => {
   },
   {
     id: 3,
-    title: "RAMAYAPATNAM",
+    title: "RAMAYAPATNAM PORT",
     image: port,
-    icon: "⚓",
-    color: "#rgb(59 179 194)",
+    icon: "🚢",
+    color: "rgb(59 179 194)",
     desc: `₹1,615 crore Heavy Cargo Rail Terminal spread across 429 acres,
     Boosting logistics, rail connectivity, and 1,300 employment opportunities.`,
   },
@@ -53,6 +54,16 @@ const Aboutus = () => {
     color: "#f44336",
     desc: "Improving healthcare facilities and ensuring better lives for all.",
   },
+
+  {
+    id: 6,
+    title: "RAILWAY",
+    image: railway,
+    icon: "🚇",
+    color: "#c5bdbd",
+    desc: "Enhancing rail-road connectivity to support trade, logistics, and economic growth while improving transportation access for Kandukur residents.",
+  },
+  
 ];
 
   return (
@@ -118,7 +129,7 @@ const Aboutus = () => {
         ))}
       </div>
 
-      {/* Second Row */}
+  
       <div className="row-two">
         {developmentData.slice(3).map((item) => (
           <div className="card-about" key={item.id}>

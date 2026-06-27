@@ -47,7 +47,7 @@ function  AnnaCanteen() {
       </div>
 
       <div className="info-item">
-        <span>🥣</span>
+        <span>🍛</span>
         <div className="small-card">
           <h5>Service</h5>
           <p>Affordable Meals</p>
