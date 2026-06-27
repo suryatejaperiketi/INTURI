@@ -15,7 +15,7 @@ function FreeBus() {
 
         <div className="scheme-header">
           <div className="scheme-icon">
-            🚌
+            👩‍🌾
           </div>
 
           <div>
