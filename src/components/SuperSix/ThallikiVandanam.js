@@ -6,6 +6,14 @@ import img2 from "../../essets/Tallivandhanam1.jpg";
 import img3 from "../../essets/Tallivandhanam3.jpg";
 import img4 from "../../essets/Tallivandhanam2.jpg";
 
+import { MdFamilyRestroom } from "react-icons/md";
+import {
+  FaFemale,
+  FaGraduationCap,
+  FaCalendarAlt,
+  FaBookOpen
+} from "react-icons/fa";
+
 function ThallikiVandanam() {
   const gallery = [img1, img2, img3, img4];
 
@@ -13,7 +21,7 @@ function ThallikiVandanam() {
     <section className="freebus-section">
       <div className="scheme-card">
         <div className="scheme-header">
-          <div className="scheme-icon">👩‍👧</div>
+          <div className="scheme-icon"> <FaFemale /></div>
 
           <div>
             <h2>Talliki Vandanam</h2>
@@ -35,36 +43,44 @@ function ThallikiVandanam() {
 
         <div className="scheme-info">
           <div className="info-item">
-            <span>👩‍👧</span>
-            <div>
-              <h5>Beneficiaries</h5>
-              <p>Eligible Mothers & School-going Children</p>
-            </div>
-          </div>
+  <div className="info-icon beneficiaries">
+    <MdFamilyRestroom />
+  </div>
+  <div>
+    <h5>Beneficiaries</h5>
+    <p>Eligible Mothers & School-going Children</p>
+  </div>
+</div>
 
-          <div className="info-item">
-            <span>🎓</span>
-            <div>
-              <h5>Benefit</h5>
-              <p>₹15,000 per Child / Year</p>
-            </div>
-          </div>
+<div className="info-item">
+  <div className="info-icon benefit">
+    <FaGraduationCap />
+  </div>
+  <div>
+    <h5>Benefit</h5>
+    <p>₹15,000 per Child / Year</p>
+  </div>
+</div>
 
-          <div className="info-item">
-            <span>📅</span>
-            <div>
-              <h5>Launched On</h5>
-              <p>12 June 2025</p>
-            </div>
-          </div>
+<div className="info-item">
+  <div className="info-icon launch">
+    <FaCalendarAlt />
+  </div>
+  <div>
+    <h5>Launched On</h5>
+    <p>12 June 2025</p>
+  </div>
+</div>
 
-          <div className="info-item">
-            <span>📚</span>
-            <div>
-              <h5>Category</h5>
-              <p>Education & Family Welfare Scheme</p>
-            </div>
-          </div>
+<div className="info-item">
+  <div className="info-icon category">
+    <FaBookOpen />
+  </div>
+  <div>
+    <h5>Category</h5>
+    <p>Education & Family Welfare Scheme</p>
+  </div>
+</div>
         </div>
       </div>
 

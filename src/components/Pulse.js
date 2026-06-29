@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/Pulse.css";
-import Pulseimg from "../essets/crowdpic.png";
+import Pulseimg from "../essets/crowdpic.webp";
 
 const Pulse = () => {
     return (

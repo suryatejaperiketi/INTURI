@@ -220,6 +220,36 @@
   border-radius: 50%;
 }
  
+.sc1 .sc-icon {
+  background: #fde7ef;
+  color: #c2185b;
+}
+
+.sc2 .sc-icon {
+  background: #e3f2fd;
+  color: #1976d2;
+}
+
+.sc3 .sc-icon {
+  background: #e8f5e9;
+  color: #2e7d32;
+}
+
+.sc4 .sc-icon {
+  background: #fff3e0;
+  color: #f57c00;
+}
+
+.sc5 .sc-icon {
+  background: #e8f5e9;
+  color: #388e3c;
+}
+
+.sc6 .sc-icon {
+  background: #ede7f6;
+  color: #5e35b1;
+}
+
 .sc-num {
   font-size: 10px;
   font-weight: 600;
@@ -251,18 +281,7 @@
   margin-top: auto;
 }
  
-.sc1 .sc-icon  { background: #FBEAF0; }
-.sc1 .sc-badge { background: #FBEAF0; color: #72243E; }
-.sc2 .sc-icon  { background: #E6F1FB; }
-.sc2 .sc-badge { background: #E6F1FB; color: #0C447C; }
-.sc3 .sc-icon  { background: #EAF3DE; }
-.sc3 .sc-badge { background: #EAF3DE; color: #27500A; }
-.sc4 .sc-icon  { background: #FAEEDA; }
-.sc4 .sc-badge { background: #FAEEDA; color: #633806; }
-.sc5 .sc-icon  { background: #E1F5EE; }
-.sc5 .sc-badge { background: #E1F5EE; color: #085041; }
-.sc6 .sc-icon  { background: #EEEDFE; }
-.sc6 .sc-badge { background: #EEEDFE; color: #3C3489; }
+
  
 /* ================================
    WINGS MEGA MENU — DESKTOP
@@ -625,3 +644,5 @@
   .appoint-btn { font-size: 12px; padding: 8px; }
   .sc-name { font-size: 11px; }
 }
+
+

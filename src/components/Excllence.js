@@ -1,5 +1,5 @@
 import React from "react";
-import Excel from "../essets/ee.png";
+import Excel from "../essets/pulsepic.webp";
 import "../styles/Excllence.css";
 
 const Excllence = () => {

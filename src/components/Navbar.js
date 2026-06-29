@@ -3,6 +3,15 @@ import logo from "../essets/logo.png";
 import "../styles/Navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
 
+import {
+  FaFemale,
+  FaBus,
+  FaSchool,
+  FaFireAlt,
+  FaTractor,
+  FaUtensils
+} from "react-icons/fa";
+
 const tdpWings = [
   "Telugu Yuvatha",
   "Telugu Mahila",
@@ -26,53 +35,58 @@ const tdpWings = [
 
 const schemes = [
   {
-    icon: "👩‍🎓",
+    icon: <FaFemale />,
     name: "Aadabidda Nidhi",
     path: "/aadabidda-nidhi",
     sub: "Women's Financial Aid",
     badge: "₹1,500 / month",
     cls: "sc1",
   },
+
   {
-    icon: "🚌",
+    icon: <FaBus />,
     name: "Sthree Shakthi",
     path: "/free-bus",
     sub: "Free Bus Travel for Women",
     badge: "Free APSRTC Travel",
     cls: "sc2",
   },
+
   {
-    icon: "🏫",
-    name: "Thalliki Vandanam",
+    icon: <FaSchool />,
+    name: "Talliki Vandanam",
     path: "/talliki-vandhanam",
     sub: "Mother's Salutation",
     badge: "₹15,000 / year",
     cls: "sc3",
   },
+
   {
-    icon: "🪵",
+    icon: <FaFireAlt />,
     name: "Deepam 2.0",
     path: "/deepam-gas",
     sub: "Free LPG Gas Cylinders",
     badge: "3 Cylinders / year",
     cls: "sc4",
   },
+
   {
-    icon: "🚜",
+    icon: <FaTractor />,
     name: "Annadata Sukhibhava",
     path: "/annadata-sukhi-bhava",
     sub: "Farmers' Financial Support",
     badge: "₹20,000 / year",
     cls: "sc5",
   },
+
   {
-  icon: "🍱",
-  name: "Anna Canteen",
-  path: "/anna-canteen",
-  sub: "Affordable Meals for Everyone",
-  badge: "₹5 Meal",
-  cls: "sc6",
-}
+    icon: <FaUtensils />,
+    name: "Anna Canteen",
+    path: "/anna-canteen",
+    sub: "Affordable Meals for Everyone",
+    badge: "₹5 Meal",
+    cls: "sc6",
+  }
 ];
 
 const Navbar = () => {
