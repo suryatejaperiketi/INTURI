@@ -10,6 +10,15 @@ import msmepark from "../../essets/msmepark.png";
 import hospital from "../../essets/hospital.png";
 import railway from "../../essets/port2.png";
 
+import {
+  FaTint,
+  FaRoad,
+  FaShip,
+  FaIndustry,
+  FaHospital,
+  FaTrain
+} from "react-icons/fa";
+
 const Aboutus = () => {
 
   const developmentData = [
@@ -17,7 +26,7 @@ const Aboutus = () => {
     id: 1,
     title: "WATER & IRRIGATION",
     image: waterirrigationimg,
-    icon: "💧",
+    icon: <FaTint />,
     color: "#0d6efd",
     desc: "Championing projects that brought water, hope and prosperity to farmers.",
   },
@@ -26,14 +35,14 @@ const Aboutus = () => {
     title: "INFRASTRUCTURE",
     image: road,
     color: "#28a745",
-    icon: "🛣️",
+    icon:  <FaRoad />,
     desc: "Building roads, bridges and connectivity for a stronger Kandukur.",
   },
   {
     id: 3,
     title: "RAMAYAPATNAM PORT",
     image: port,
-    icon: "🚢",
+    icon: <FaShip />,
     color: "rgb(59 179 194)",
     desc: `₹1,615 crore Heavy Cargo Rail Terminal spread across 429 acres,
     Boosting logistics, rail connectivity, and 1,300 employment opportunities.`,
@@ -42,7 +51,7 @@ const Aboutus = () => {
     id: 4,
     title: "MSME PARK",
     image: msmepark,
-    icon: "🏭",
+    icon:<FaIndustry />,
     color: "#481b5c",
     desc: "Creating jobs and encouraging entrepreneurship through MSME Park.",
   },
@@ -50,7 +59,7 @@ const Aboutus = () => {
     id: 5,
     title: "HEALTHCARE",
     image: hospital,
-    icon: "🏥",
+    icon: <FaHospital />,
     color: "#f44336",
     desc: "Improving healthcare facilities and ensuring better lives for all.",
   },
@@ -59,8 +68,8 @@ const Aboutus = () => {
     id: 6,
     title: "RAILWAY",
     image: railway,
-    icon: "🚇",
-    color: "#c5bdbd",
+    icon: <FaTrain />,
+    color: "#4b5563",
     desc: "Enhancing rail-road connectivity to support trade, logistics, and economic growth while improving transportation access for Kandukur residents.",
   },
   
