@@ -121,7 +121,7 @@ const Contact = () => {
                                 loading="lazy"
                             />
                         </div>
-                    </div>cls
+                    </div>
                     
                 </div>
             </div>
