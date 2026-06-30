@@ -122,12 +122,11 @@
   font-weight: 700;
 }
  
-.ben-label {
+.ben-label {  
   flex: 1;
-  text-align: left;
+  text-align:left;
 }
  
-
  
 /* ================================
    DESKTOP — schemes full-width fixed panel
@@ -482,7 +481,7 @@
  
   .multy-drop .dropdown-item {
     white-space: normal;
-    text-align: left;
+    text-align: center;
     padding: 10px 16px;
   }
  
@@ -491,7 +490,7 @@
     padding: 10px 16px;
   }
  
-  .ben-label { flex: 1; text-align: left; }
+  .ben-label { flex: 1; text-align: center; }
  
   /* ── schemes panel: inline on mobile ── */
   .schemes-mega-fullwidth {
@@ -645,4 +644,16 @@
   .sc-name { font-size: 11px; }
 }
 
+.multy-drop {
+  min-width: 250px;
+  padding: 10px;
+}
 
+.multy-drop .dropdown-item {
+  padding: 8px 12px;
+}
+
+.multy-drop .col-6 {
+  display: flex;
+  flex-direction: column;
+}

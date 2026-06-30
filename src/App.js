@@ -18,6 +18,8 @@ import ThallikiVandanam from './components/SuperSix/ThallikiVandanam';
 import AdPopup from './components/AdPopup';
 import AadabiddaNidhi from './components/SuperSix/AadabiddaNidhi';
 import AnnaCanteen from './components/SuperSix/AnnaCanteen';
+import Mp3 from './components/Mp3';
+import Mp4 from './components/Mp4';
 
 
 function App() {
@@ -52,6 +54,8 @@ function App() {
         <Route path='/free-bus' element={<FreeBus/>} />
         <Route path='/talliki-vandhanam' element={<ThallikiVandanam/>} />
         <Route path='/anna-canteen' element={<AnnaCanteen/>} />
+        <Route path='/mp3' element={<Mp3/>} />
+        <Route path='/mp4' element={<Mp4/>} />
       </Routes>
       </div>
     </div>

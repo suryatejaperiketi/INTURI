@@ -9,7 +9,7 @@ import {
   FaSchool,
   FaFireAlt,
   FaTractor,
-  FaUtensils
+  FaUtensils,
 } from "react-icons/fa";
 
 const tdpWings = [
@@ -86,7 +86,7 @@ const schemes = [
     sub: "Affordable Meals for Everyone",
     badge: "₹5 Meal",
     cls: "sc6",
-  }
+  },
 ];
 
 const Navbar = () => {
@@ -138,10 +138,10 @@ const Navbar = () => {
     return () => window.removeEventListener("resize", check);
   }, []);
 
-useEffect(() => {
-  scheduleCloseAll(0);
-  setNavShow(false);
-}, [location.pathname, scheduleCloseAll]);
+  useEffect(() => {
+    scheduleCloseAll(0);
+    setNavShow(false);
+  }, [location.pathname, scheduleCloseAll]);
 
   /* ── outside click closes everything ── */
   useEffect(() => {
@@ -269,37 +269,37 @@ useEffect(() => {
   const closeAll = () => scheduleCloseAll(0);
 
   const SchemeCards = () => (
-  <>
-    <p className="schemes-mega-title">Super Six Guarantee Schemes</p>
+    <>
+      <p className="schemes-mega-title">Super Six Guarantee Schemes</p>
 
-    <div className="schemes-grid">
-      {schemes.map((s, i) => (
-        <NavLink
-          key={i}
-          className={`scheme-card ${s.cls}`}
-          to={s.path}
-          onClick={() => {
-            closeAll();
-            setNavShow(false);
-          }}
-        >
-          <div className="sc-top">
-            <span className="sc-icon">{s.icon}</span>
+      <div className="schemes-grid">
+        {schemes.map((s, i) => (
+          <NavLink
+            key={i}
+            className={`scheme-card ${s.cls}`}
+            to={s.path}
+            onClick={() => {
+              closeAll();
+              setNavShow(false);
+            }}
+          >
+            <div className="sc-top">
+              <span className="sc-icon">{s.icon}</span>
 
-            <div>
-              <div className="sc-num">Scheme 0{i + 1}</div>
-              <div className="sc-name">{s.name}</div>
+              <div>
+                <div className="sc-num">Scheme 0{i + 1}</div>
+                <div className="sc-name">{s.name}</div>
+              </div>
             </div>
-          </div>
 
-          <div className="sc-sub">{s.sub}</div>
+            <div className="sc-sub">{s.sub}</div>
 
-          <span className="sc-badge">{s.badge}</span>
-        </NavLink>
-      ))}
-    </div>
-  </>
-);
+            <span className="sc-badge">{s.badge}</span>
+          </NavLink>
+        ))}
+      </div>
+    </>
+  );
   return (
     <>
       <nav className="navbar navbar-expand-lg sticky-top" ref={navRef}>
@@ -360,9 +360,7 @@ useEffect(() => {
                     <span
                       className={`${showAchievements ? "open" : ""}`}
                       style={{ marginLeft: 8 }}
-                    >
-                      
-                    </span>
+                    ></span>
                   )}
                 </button>
 
@@ -407,9 +405,7 @@ useEffect(() => {
                       <span className="ben-label">BENEFICIARIES</span>
                       <span
                         className={` ${showBeneficiary ? "open" : ""}`}
-                      >
-                        
-                      </span>
+                      ></span>
                     </div>
 
                     {/* MOBILE: schemes inline */}
@@ -428,7 +424,7 @@ useEffect(() => {
 
               {/* ── MULTIMEDIA ── */}
               <li
-                className="nav-item dropdown"
+                className="nav-item dropdown multimedia-drop"
                 onMouseEnter={onMmEnter}
                 onMouseLeave={onMmLeave}
               >
@@ -442,52 +438,46 @@ useEffect(() => {
                     <span
                       className={` ${showMultimedia ? "open" : ""}`}
                       style={{ marginLeft: 8 }}
-                    >
-                      
-                    </span>
+                    ></span>
                   )}
                 </button>
                 <ul
                   className={`dropdown-menu multy-drop ${showMultimedia ? "show" : ""}`}
-                  onMouseEnter={onMmEnter}
-                  onMouseLeave={onMmLeave}
                 >
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/Photoslanding"
-                      onClick={() => {
-                        closeAll();
-                        setNavShow(false);
-                      }}
-                    >
-                      GALLERY
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/videos"
-                      onClick={() => {
-                        closeAll();
-                        setNavShow(false);
-                      }}
-                    >
-                      VIDEOS
-                    </NavLink>
-                  </li>
-                  <li>
-                    <NavLink
-                      className="dropdown-item"
-                      to="/press"
-                      onClick={() => {
-                        closeAll();
-                        setNavShow(false);
-                      }}
-                    >
-                      PRESS
-                    </NavLink>
-                  </li>
+                  <div className="row g-0">
+                    {/* Left Side */}
+                    <div className="col-6">
+                      <li>
+                        <NavLink className="dropdown-item" to="/Photoslanding">
+                          GALLERY
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink className="dropdown-item" to="/videos">
+                          VIDEOS
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink className="dropdown-item" to="/press">
+                          PRESS
+                        </NavLink>
+                      </li>
+                    </div>
+
+                    {/* Right Side */}
+                    <div className="col-6">
+                      <li>
+                        <NavLink className="dropdown-item" to="/mp3">
+                          MP3
+                        </NavLink>
+                      </li>
+                      <li>
+                        <NavLink className="dropdown-item" to="/mp4">
+                          MP4
+                        </NavLink>
+                      </li>
+                    </div>
+                  </div>
                 </ul>
               </li>
 
@@ -527,9 +517,7 @@ useEffect(() => {
                     <span
                       className={` ${showWings ? "open" : ""}`}
                       style={{ marginLeft: 8 }}
-                    >
-                      
-                    </span>
+                    ></span>
                   )}
                 </button>
                 <div
