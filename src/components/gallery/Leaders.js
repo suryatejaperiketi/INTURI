@@ -1,6 +1,6 @@
 import React from "react";
 import '../../styles/Leaders.css';
-import l1 from '../../essets/l1.png';
+import l1 from '../../essets/lokesh.png';
 import l2 from '../../essets/l2.png';
 import l3 from '../../essets/l3.png';
 import l4 from '../../essets/l4.png';

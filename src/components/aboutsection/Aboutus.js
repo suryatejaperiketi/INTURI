@@ -1,7 +1,7 @@
 import React from "react";
 import "../../styles/About.css";
 import Aboutimpact from "./Aboutimpact";
-import about1 from "../../essets/inturi.jpg";
+import about1 from "../../essets/lokesh.png";
 import Footer from "../Footer";
 import waterirrigationimg from "../../essets/waterirrigation.png";
 import road from "../../essets/road.png";
