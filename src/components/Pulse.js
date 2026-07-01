@@ -20,6 +20,7 @@ const Pulse = () => {
                             src={Pulseimg}
                             className="img-fluid rounded img-pulse"
                             alt="Pulse"
+                            loading="lazy"
                         />
                     </div>
 

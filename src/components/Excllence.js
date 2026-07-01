@@ -31,6 +31,7 @@ const Excllence = () => {
                                 src={Excel}
                                 className="img-fluid img-excellence"
                                 alt="Excellence"
+                                loading="lazy"
                             />
                         </div>
 

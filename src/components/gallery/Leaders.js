@@ -17,9 +17,23 @@ import l14 from '../../essets/ppl3.jpeg';
 import l15 from '../../essets/ppl4.jpeg';
 
 const Leaders = () => {
-    const leaders = [
-        l14, l15, l1, l2, l3, l4, l5, l6, l7, l8, l9, l10, l11, l12, l13
-    ]
+  const leaders = [
+  { image: l14, caption: "Political Leaders Meeting" },
+  { image: l15, caption: "Leadership Gathering" },
+  { image: l1, caption: "Meeting with Political Leader" },
+  { image: l2, caption: "Public Interaction" },
+  { image: l3, caption: "Honoring a Leader" },
+  { image: l4, caption: "Community Leaders Event" },
+  { image: l5, caption: "Political Discussion" },
+  { image: l6, caption: "Leadership Conference" },
+  { image: l7, caption: "Special Guest Meeting" },
+  { image: l8, caption: "Political Program" },
+  { image: l9, caption: "Public Relations Event" },
+  { image: l10, caption: "Leadership Recognition" },
+  { image: l11, caption: "Political Gathering" },
+  { image: l12, caption: "Community Outreach" },
+  { image: l13, caption: "Leaders Interaction" },
+];
     return (
         <>
             <div className="gallery-container">
@@ -29,10 +43,11 @@ const Leaders = () => {
                     <div className="gallery-item" key={index}>
 
                         <img
-                            src={leader}
+                            src={leader.image}
                             alt={`gallery-${index}`}
                             className="gallery-image"
                         />
+                         <figcaption className="fig-cap">{leader.caption}</figcaption>
 
                     </div>
 

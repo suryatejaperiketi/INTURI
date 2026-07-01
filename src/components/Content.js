@@ -51,6 +51,7 @@ const Content = () => {
                   src={item.image}
                   className="card-img-top"
                   alt={item.title}
+                  loading="lazy"
                 />
 
                 <div className="card-body">
