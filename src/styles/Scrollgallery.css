@@ -13,19 +13,19 @@
 
 .slide-track{
     display: flex;
-    width: calc(250px * 10);
+    width: calc(300px * 10);
     animation: scroll 20s linear infinite;
 }
 
 .scrol{
-    width: 250px;
+    width: 300px;
     margin: 0 15px;
 }
 
 .scrol img{
     width: 100% !important;
-    height: 180px;
-    border-radius: 25px;
+    height: 200px;
+    border-radius: 20px;
     object-fit: cover;
 }
 

@@ -136,6 +136,25 @@
     background:#65a30d;
 }
 
+
+/* Anna Canteen */
+
+.ac-beneficiaries{
+    background:#f59e0b;
+}
+
+.ac-service{
+    background:#ef4444;
+}
+
+.ac-date{
+    background:#3b82f6;
+}
+
+.ac-category{
+    background:#22c55e;
+}
+
 .small-card{
     align-items: center;
     padding-top: 20px;

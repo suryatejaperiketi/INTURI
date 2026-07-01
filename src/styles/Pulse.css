@@ -47,7 +47,7 @@
 }
 
 
-@media (max-width: 992px) {
+@media (max-width: 991px) {
 
     .head-pulse {
         font-size: 2.7rem;
@@ -55,12 +55,17 @@
 
     .card-pulse,
     .card-pulse-bottom {
-        margin-bottom: 20px;
+        margin-bottom: 10px;
     }
 
     .text-card-para {
         font-size: 0.88rem;
     }
+    .head-pulse {
+   
+    margin-top: 0.5cm;
+    margin-bottom:0.5cm;
+}
 }
 
 @media (max-width: 768px) {

@@ -9,8 +9,8 @@ const Pulse = () => {
                 Political <strong style={{ color: "#FFD129" }}>Pulse.</strong>
             </h1>
 
-            <div className="container-fluid px-5">
-                
+            <div className="container-fluid px-5 mb-5">
+        
                 {/* First Row */}
                 <div className="row align-items-stretch">
 
@@ -53,7 +53,7 @@ const Pulse = () => {
                     </div>
                 </div>
 
-                <div className="row mb-2">
+                <div className="row mb-4">
                     <div className="col-12 col-md-6 col-lg-4">
                         <div className="card card-pulse-bottom ">
                             <div className="card-body">

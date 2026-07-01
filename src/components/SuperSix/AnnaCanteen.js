@@ -1,5 +1,13 @@
 import React from "react";
 import "../../styles/FreeBus.css";
+import {
+  FaUsers,
+  FaCalendarAlt,
+  FaTag
+} from "react-icons/fa";
+import { MdRestaurant } from "react-icons/md";
+
+
 
 import img1 from "../../essets/anna.png";
 import img2 from "../../essets/annacanteen1.jpg";
@@ -15,7 +23,7 @@ function  AnnaCanteen() {
 
         <div className="scheme-header">
           <div className="scheme-icon">
-            🍱
+            <MdRestaurant />
           </div>
 
           <div>
@@ -38,39 +46,47 @@ function  AnnaCanteen() {
 
         <div className="scheme-info">
 
-      <div className="info-item">
-        <span>👨‍👩‍👧‍👦</span>
-        <div className="small-card">
-          <h5>Beneficiaries</h5>
-          <p>All Eligible Citizens</p>
-        </div>
-      </div>
-
-      <div className="info-item">
-        <span>🍛</span>
-        <div className="small-card">
-          <h5>Service</h5>
-          <p>Affordable Meals</p>
-        </div>
-      </div>
-
-      <div className="info-item">
-        <span>📅</span>
-        <div className="small-card">
-          <h5>Reintroduced On</h5>
-          <p>16 Aug 2024</p>
-        </div>
-      </div>
-
-      <div className="info-item">
-        <span>🏷️</span>
-        <div className="small-card">
-          <h5>Category</h5>
-          <p>Food Security</p>
-        </div>
-      </div>
-
+  <div className="info-item">
+    <div className="info-icon ac-beneficiaries">
+      <FaUsers />
     </div>
+    <div className="small-card">
+      <h5>Beneficiaries</h5>
+      <p>All Eligible Citizens</p>
+    </div>
+  </div>
+
+  <div className="info-item">
+    <div className="info-icon ac-service">
+      <MdRestaurant />
+    </div>
+    <div className="small-card">
+      <h5>Service</h5>
+      <p>Affordable Meals</p>
+    </div>
+  </div>
+
+  <div className="info-item">
+    <div className="info-icon ac-date">
+      <FaCalendarAlt />
+    </div>
+    <div className="small-card">
+      <h5>Reintroduced On</h5>
+      <p>16 Aug 2024</p>
+    </div>
+  </div>
+
+  <div className="info-item">
+    <div className="info-icon ac-category">
+      <FaTag />
+    </div>
+    <div className="small-card">
+      <h5>Category</h5>
+      <p>Food Security</p>
+    </div>
+  </div>
+
+</div>
 
       </div>
 
