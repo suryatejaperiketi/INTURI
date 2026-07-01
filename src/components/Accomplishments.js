@@ -40,14 +40,14 @@ const Accomplishments = () => {
     ]
     return (
         <>
-            < div className="main-cont-accomp pb-3" >
+            <div className="main-cont-accomp">
                 <div class="card text-bg-dark">
-                    <img src={accomp} class="card-img" alt="..." />
+                    <img src={accomp} class="card-img" alt="Accomplishment" />
                     <div class="card-img-overlay">
                         <h3 class="card-title text-center acc-heading" style={{ color: "black" }}>ACCOMPLISHMENT</h3>
                     </div>
                 </div>
-                <div className="row">
+                <div className="row p-4">
                     {data.map((item, index) => (
                         <div
                             className="col-lg-4 col-md-6 col-12 mb-4"

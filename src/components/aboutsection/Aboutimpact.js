@@ -1,6 +1,6 @@
 import React from "react";
 import "../../styles/Aboutimpact.css";
-import about2 from "../../essets/intpic.png";
+import about2 from "../../essets/intpic1.png";
 
 import { PiBuildingsBold } from "react-icons/pi";
 import { AiOutlineSecurityScan, AiOutlineBulb } from "react-icons/ai";

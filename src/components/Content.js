@@ -2,7 +2,7 @@ import React from "react";
 import card1 from "../essets/swatch.png";
 import card2 from "../essets/freebus.png";
 import card3 from "../essets/anna.png";
-import issuepic from "../essets/issuepic.webp";
+import issuepic from "../essets/issuepic 2.png";
 import { useNavigate } from "react-router-dom";
 import "../styles/Content.css";
 

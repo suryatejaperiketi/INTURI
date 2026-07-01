@@ -6,7 +6,7 @@ import thumb1 from "../essets/crowdpic.webp"
 import thumb2 from "../essets/pulsepic.webp";
 import thumb3 from "../essets/about2.png";
 import thumb4 from "../essets/pic2.png";
-import thumb5 from "../essets/issuepic.webp";
+import thumb5 from "../essets/issuepic 2.png";
 import thumb6 from "../essets/crowdpic.png";
 
 function Mp4() {
