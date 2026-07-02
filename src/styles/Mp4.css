@@ -27,6 +27,8 @@
   border-radius: 12px;
   background: #fff;
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  text-decoration: none !important;
+  color: inherit !important;
 }
 
 .video-caption {
@@ -40,6 +42,11 @@
 
 .photo-main-section a {
   text-decoration: none !important;
+  color: inherit;
+}
+
+a{
+  text-decoration: none;
   color: inherit;
 }
 
@@ -83,6 +90,7 @@
   text-align: center;
   font-size: 18px;
   margin: 0;
+  text-decoration: none !important;
 }
 
 /* Tablet */
