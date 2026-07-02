@@ -20,7 +20,7 @@ import acc4 from "../essets/tank.png";
 import port from "../essets/port1.png";
 import cargo from "../essets/port2.png";
 import rail from "../essets/port3.png";
-import cargo2 from "../essets/port44.png";
+import cargo2 from "../essets/port4.png";
 
 import park1 from "../essets/park1.png";
 import park2 from "../essets/park2.png";

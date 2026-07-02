@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import '../styles/AdPopup.css';
-import image from "../essets/bday.png";
+import candidateVideo from "../essets/mla-bday.mp4.mp4";
  
 const AdPopup = ({ onClose }) => {
   const [countdown, setCountdown] = useState(5);
@@ -45,11 +45,15 @@ const AdPopup = ({ onClose }) => {
  
         {/* ── CANDIDATE IMAGE ── */}
         <div className="popup-image-wrap">
-          <img
-            src={image}
-            alt="Sri. Inturi Nageswara Rao Garu"
-            className="popup-candidate-img"
-          />
+      
+
+   <video
+  className="popup-candidate-img"
+  controls
+  playsInline
+>
+  <source src={candidateVideo} type="video/mp4" />
+</video>
         </div>
  
         {/* ── NAME & DESIGNATION ── */}

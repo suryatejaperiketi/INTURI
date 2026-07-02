@@ -39,6 +39,31 @@
     align-items: center;
     padding: 15px;
 }
+.beneficiary-details {
+  width: 90%;
+}
+
+.detail-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  gap: 0px;
+}
+
+.detail-row p {
+  margin: 0;
+  
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .detail-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+  }
+}
 
 .cmrf-img {
     width: 140px;
@@ -163,9 +188,9 @@
     display: block;
 }
 
-.play-icon-overlay {
+.play-icon-overlay{
     position: absolute;
-    top: 50%;
+    top: 47%;
     left: 50%;
     transform: translate(-50%, -50%);
     
@@ -178,6 +203,13 @@
     
     text-shadow: 0 0 10px rgba(0,0,0,0.8);
     pointer-events: none;
+}
+
+@media(max-width: 768px) {
+    .play-icon-overlay {
+    top: 50%;
+    left: 50%;
+    }
 }
 
 .play-icon-overlay svg {

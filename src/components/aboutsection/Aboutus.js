@@ -5,7 +5,7 @@ import about1 from "../../essets/lokesh.png";
 import Footer from "../Footer";
 import waterirrigationimg from "../../essets/waterirrigation.png";
 import road from "../../essets/road.png";
-import port  from "../../essets/port1.png";
+import port  from "../../essets/port4.png";
 import msmepark from "../../essets/msmepark.png";
 import hospital from "../../essets/hospital.png";
 import railway from "../../essets/port2.png";
@@ -24,11 +24,11 @@ const Aboutus = () => {
   const developmentData = [
   {
     id: 1,
-    title: "WATER & IRRIGATION",
+    title: "RALLAPADU RESERVOIR PROJECT",
     image: waterirrigationimg,
     icon: <FaTint />,
     color: "#0d6efd",
-    desc: "Championing projects that brought water, hope and prosperity to farmers.",
+    desc: "Providing irrigation and drinking water support, bringing growth, sustainability, and prosperity to Kandukur's farmers and villages",
   },
   {
     id: 2,
@@ -66,7 +66,7 @@ const Aboutus = () => {
 
   {
     id: 6,
-    title: "RAILWAY",
+    title: "RAILWAY CARGO",
     image: railway,
     icon: <FaTrain />,
     color: "#4b5563",
@@ -117,44 +117,25 @@ const Aboutus = () => {
 
 
  <section className="development-section">
+  <div className="development-grid">
+    {developmentData.map((item) => (
+      <div className="card-about" key={item.id}>
+        <img src={item.image} alt={item.title} />
 
-      {/* First Row */}
-      <div className="row-one">
-        {developmentData.slice(0, 3).map((item) => (
-          <div className="card-about" key={item.id}>
-            <img src={item.image} alt={item.title} />
+        <div
+          className="icon-circle"
+          style={{ backgroundColor: item.color }}
+        >
+          {item.icon}
+        </div>
 
-            <div className="icon-circle"
-             style={{ backgroundColor: item.color }}>
-              {item.icon}
-            </div>
+        <h3>{item.title}</h3>
 
-            <h3>{item.title}</h3>
-
-            <p>{item.desc}</p>
-          </div>
-        ))}
+        <p>{item.desc}</p>
       </div>
-
-  
-      <div className="row-two">
-        {developmentData.slice(3).map((item) => (
-          <div className="card-about" key={item.id}>
-            <img src={item.image} alt={item.title} />
-
-            <div className="icon-circle"
-            style={{ backgroundColor: item.color }}>
-              {item.icon}
-            </div>
-
-            <h3>{item.title}</h3>
-
-            <p>{item.desc}</p>
-          </div>
-        ))}
-      </div>
-
-    </section>
+    ))}
+  </div>
+</section>
 
 
 
