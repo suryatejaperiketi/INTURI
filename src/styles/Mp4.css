@@ -22,18 +22,34 @@
 }
 
 .video-card {
-  text-decoration: none;
-  color: #222;
-  background: #fff;
-  border-radius: 12px;
+  margin: 0;
   overflow: hidden;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.video-caption {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  text-align: center;
+  color: #333;
+  min-height: 55px;
+}
+
+.photo-main-section a {
+  text-decoration: none !important;
+  color: inherit;
+}
+
+.image-video {
+  width: 100%;
+  display: block;
   transition: 0.3s;
 }
 
-.video-card:hover {
-  transform: translateY(-6px);
-}
+
 
 .thumbnail-wrapper {
   position: relative;

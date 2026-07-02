@@ -18,7 +18,21 @@ import i15 from '../../essets/i15.png';
 const Inogrations = () => {
 
     const inogration = [
-        i1, i2, i3, i4, i5, i6, i7, i8, i9, i10, i11, i12, i13, i14, i15
+        { image: i1, caption: "Inogrations Event 1" },
+        { image: i2, caption: "Inogrations Event 2" },
+        { image: i3, caption: "Inogrations Event 3" },
+        { image: i4, caption: "Inogrations Event 4" },
+        { image: i5, caption: "Inogrations Event 5" },
+        { image: i6, caption: "Inogrations Event 6" },
+        { image: i7, caption: "Inogrations Event 7" },
+        { image: i8, caption: "Inogrations Event 8" },
+        { image: i9, caption: "Inogrations Event 9" },
+        { image: i10, caption: "Inogrations Event 10" },
+        { image: i11, caption: "Inogrations Event 11" },
+        { image: i12, caption: "Inogrations Event 12" },
+        { image: i13, caption: "Inogrations Event 13" },
+        { image: i14, caption: "Inogrations Event 14" },
+        { image: i15, caption: "Inogrations Event 15" }
     ]
 
     return (
@@ -27,15 +41,14 @@ const Inogrations = () => {
 
                 {inogration.map((inogration, index) => (
 
-                    <div className="gallery-item" key={index}>
-
-                        <img
-                            src={inogration}
-                            alt={`gallery-${index}`}
-                            className="gallery-image"
-                        />
-
-                    </div>
+         <figure className="gallery-item" key={index}>
+          <img
+            src={inogration.image}
+            alt={inogration.caption}
+            className="gallery-image"
+          />
+          <figcaption className="fig-cap">{inogration.caption}</figcaption>
+        </figure>
 
                 ))}
 

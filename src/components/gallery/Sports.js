@@ -16,22 +16,35 @@ import sp14 from '../../essets/sp14.png';
 import sp15 from '../../essets/sp15.png';
 const Sports = () => {
     const Sport = [
-        sp1, sp2, sp3, sp4, sp5, sp6, sp7, sp8, sp9, sp10, sp11, sp12, sp13, sp14, sp15
-    ]
+        { image: sp1, caption: "Sports Event 1" },
+        { image: sp2, caption: "Sports Event 2" },
+        { image: sp3, caption: "Sports Event 3" },
+        { image: sp4, caption: "Sports Event 4" },
+        { image: sp5, caption: "Sports Event 5" },
+        { image: sp6, caption: "Sports Event 6" },
+        { image: sp7, caption: "Sports Event 7" },
+        { image: sp8, caption: "Sports Event 8" },
+        { image: sp9, caption: "Sports Event 9" },
+        { image: sp10, caption: "Sports Event 10" },
+        { image: sp11, caption: "Sports Event 11" },
+        { image: sp12, caption: "Sports Event 12" },
+        { image: sp13, caption: "Sports Event 13" },
+        { image: sp14, caption: "Sports Event 14" },
+        { image: sp15, caption: "Sports Event 15" }
+    ];
     return (
         <div className="gallery-container">
 
             {Sport.map((sport, index) => (
-
-                <div className="gallery-item" key={index}>
-
-                    <img
-                        src={sport}
-                        alt={`gallery-${index}`}
-                        className="gallery-image"
-                    />
-
-                </div>
+       <figure className="gallery-item" key={index}>
+          <img
+            src={sport.image}
+            alt={sport.caption}
+            className="gallery-image"
+          />
+          <figcaption className="fig-cap">{sport.caption}</figcaption>
+        </figure>
+                
 
             ))}
 

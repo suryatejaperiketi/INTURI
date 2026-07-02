@@ -6,7 +6,6 @@ import l3 from '../../essets/l3.png';
 import l4 from '../../essets/l4.png';
 import l5 from '../../essets/l5.png';
 import l6 from '../../essets/l6.png';
-import l7 from '../../essets/l7.png';
 import l8 from '../../essets/l8.png';
 import l9 from '../../essets/l9.png';
 import l10 from '../../essets/l10.png';
@@ -26,7 +25,6 @@ const Leaders = () => {
   { image: l4, caption: "Community Leaders Event" },
   { image: l5, caption: "Political Discussion" },
   { image: l6, caption: "Leadership Conference" },
-  { image: l7, caption: "Special Guest Meeting" },
   { image: l8, caption: "Political Program" },
   { image: l9, caption: "Public Relations Event" },
   { image: l10, caption: "Leadership Recognition" },

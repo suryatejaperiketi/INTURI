@@ -16,22 +16,35 @@ import o14 from '../../essets/o14.png';
 import o15 from '../../essets/o15.png';
 const Others =()=>{
     const other=[
-        o1,o2,o3,o4,o5,o6,o7,o8,o9,o10,o11,o12,o13,o14,o15
+        { image: o1, caption: "Other Event 1" },
+        { image: o2, caption: "Other Event 2" },
+        { image: o3, caption: "Other Event 3" },
+        { image: o4, caption: "Other Event 4" },
+        { image: o5, caption: "Other Event 5" },
+        { image: o6, caption: "Other Event 6" },
+        { image: o7, caption: "Other Event 7" },
+        { image: o8, caption: "Other Event 8" },
+        { image: o9, caption: "Other Event 9" },
+        { image: o10, caption: "Other Event 10" },
+        { image: o11, caption: "Other Event 11" },
+        { image: o12, caption: "Other Event 12" },
+        { image: o13, caption: "Other Event 13" },
+        { image: o14, caption: "Other Event 14" },
+        { image: o15, caption: "Other Event 15" }
     ]
     return(
          <div className="gallery-container">
 
     {other.map((other, index) => (
 
-        <div className="gallery-item" key={index}>
-
-            <img
-                src={other}
-                alt={`gallery-${index}`}
-                className="gallery-image"
-            />
-
-        </div>
+       <figure className="gallery-item" key={index}>
+          <img
+            src={other.image}
+            alt={other.caption}
+            className="gallery-image"
+          />
+          <figcaption className="fig-cap">{other.caption}</figcaption>
+        </figure>
 
     ))}
 

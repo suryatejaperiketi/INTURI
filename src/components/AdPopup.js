@@ -50,10 +50,13 @@ const AdPopup = ({ onClose }) => {
    <video
   className="popup-candidate-img"
   controls
+  autoPlay
+  loop
   playsInline
 >
   <source src={candidateVideo} type="video/mp4" />
 </video>
+
         </div>
  
         {/* ── NAME & DESIGNATION ── */}

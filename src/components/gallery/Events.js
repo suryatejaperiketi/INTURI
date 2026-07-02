@@ -1,5 +1,4 @@
 import React from "react";
-import "../../styles/Leaders.css";
 
 import e1 from "../../essets/e1.png";
 import e2 from "../../essets/e2.png";
@@ -45,7 +44,7 @@ const Events = () => {
             alt={event.caption}
             className="gallery-image"
           />
-          <figcaption>{event.caption}</figcaption>
+          <figcaption className="fig-cap">{event.caption}</figcaption>
         </figure>
       ))}
     </div>

@@ -16,7 +16,22 @@ import s14 from '../../essets/s14.png';
 import s15 from '../../essets/s15.png';
 const Spiritual = () => {
     const spiritual = [
-        s1, s2, s3, s4, s5, s6, s7, s8, s9, s10, s11, s12, s13, s14, s15
+
+        { image: s1, caption: "Spiritual Event 1" },
+        { image: s2, caption: "Spiritual Event 2" },
+        { image: s3, caption: "Spiritual Event 3" },
+        { image: s4, caption: "Spiritual Event 4" },
+        { image: s5, caption: "Spiritual Event 5" },
+        { image: s6, caption: "Spiritual Event 6" },
+        { image: s7, caption: "Spiritual Event 7" },
+        { image: s8, caption: "Spiritual Event 8" },
+        { image: s9, caption: "Spiritual Event 9" },
+        { image: s10, caption: "Spiritual Event 10" },
+        { image: s11, caption: "Spiritual Event 11" },
+        { image: s12, caption: "Spiritual Event 12" },
+        { image: s13, caption: "Spiritual Event 13" },
+        { image: s14, caption: "Spiritual Event 14" },
+        { image: s15, caption: "Spiritual Event 15" }
     ]
     return (
         <>
@@ -24,15 +39,12 @@ const Spiritual = () => {
 
     {spiritual.map((spirit, index) => (
 
-        <div className="gallery-item" key={index}>
 
-            <img
-                src={spirit}
-                alt={`gallery-${index}`}
-                className="gallery-image"
-            />
-
-        </div>
+        <figure className="gallery-item" key={index}>
+            <img src={spirit.image} alt={spirit.caption} className="gallery-image" />
+            <figcaption className="fig-cap">{spirit.caption}</figcaption>
+            
+        </figure>
 
     ))}
 

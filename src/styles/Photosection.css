@@ -4,8 +4,7 @@
 
 .image-bord{
     border: 1px solid black;
-    padding: 10px;
-    margin: 10px;
+    margin: 5px;
     border-radius: 15px;
 }
 
@@ -116,7 +115,8 @@
 
 .fig-cap{
     text-align: center;
-    font-size: 16px;
+    font-size: 17px;
+    padding-bottom: 5px;
     
 }
 
