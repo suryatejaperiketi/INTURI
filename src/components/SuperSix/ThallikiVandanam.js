@@ -19,7 +19,7 @@ function ThallikiVandanam() {
 
   return (
     <section className="freebus-section">
-      <div className="scheme-card">
+      <div className="scheme-card-six">
         <div className="scheme-header">
           <div className="scheme-icon"> <FaFemale /></div>
 

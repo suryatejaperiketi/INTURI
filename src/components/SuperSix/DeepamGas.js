@@ -15,7 +15,7 @@ function DeepamGas() {
 
   return (
     <section className="freebus-section">
-      <div className="scheme-card">
+      <div className="scheme-card-six">
         <div className="scheme-header">
           <div className="scheme-icon">
             <Cylinder size={34} color="#ff9800" />

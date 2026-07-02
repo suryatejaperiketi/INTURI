@@ -100,15 +100,22 @@
 }
 
 @media (max-width: 768px) {
+   
     .cmrf-img-wrapper {
-        min-height: 120px;
-    }
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 15px;
+  }
 
     
 
     .cmrf-img {
+        display: flex;
+        justify-content: center;
         width: 100px;
         height: 100px;
+        align-items: center;
     }
 
     .cmrf-content {
@@ -229,4 +236,47 @@
     background: rgba(0,0,0,0.25);
     border-radius: 10px;
     z-index: -1;
+}
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+
+  .cmrf-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .beneficiary-details {
+    width: 220px; /* adjust as needed */
+  }
+
+  .cmrf-img-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .cmrf-img {
+    margin: 0 auto;
+  }
+
+  .detail-row {
+    display: block;
+  }
+
+  .detail-row p,
+  .cmrf-content p {
+    text-align: left;
+  }
 }

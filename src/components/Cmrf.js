@@ -305,7 +305,7 @@ const Cmrf = () => {
                 <div className="card cmrf-card h-100">
                   <div className="row g-0 align-items-center h-100">
                     {/* Image Section */}
-                    <div className="col-4">
+                    <div className="col-md-4">
                       <div
                         className="cmrf-img-wrapper"
                         onClick={() => openVideo(beneficiary.videoSrc)}
@@ -323,7 +323,7 @@ const Cmrf = () => {
                     </div>
 
                     {/* Content Section */}
-                    <div className="col-8">
+                    <div className="col-md-8">
                       <div className="cmrf-content">
                         <h5 className="cmrf-name">{beneficiary.name}</h5>
 

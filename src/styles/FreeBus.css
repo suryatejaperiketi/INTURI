@@ -14,6 +14,15 @@
     box-shadow:0 8px 25px rgba(0,0,0,.05);
 }
 
+.scheme-card-six{
+     background:#fff;
+    border:1px solid #ececec;
+    border-radius:16px;
+    padding:30px;
+    margin-top:110px;
+    box-shadow:0 8px 25px rgba(0,0,0,.05);
+}
+
 .scheme-header{
     display:flex;
     align-items:center;
@@ -241,7 +250,7 @@
     padding:0 15px;
 }
 
-.scheme-card,
+.scheme-card,.scheme-card-six
 .gallery-card{
     padding:20px;
 }
