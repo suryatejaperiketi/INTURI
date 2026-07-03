@@ -78,10 +78,10 @@ const Content = () => {
 
           <button
             className="issue-btn"
-onClick={() => {
-  window.scrollTo(0, 0);
-  navigate("/contact");
-}}
+            onClick={() => {
+              window.scrollTo(0, 0);
+              navigate("/contact");
+            }}
           >
             Report An Issue
           </button>

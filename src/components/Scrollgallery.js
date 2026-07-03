@@ -30,7 +30,8 @@ const Scrollgallery = () => {
                     {
                         images.map((item, index) => (
                             <div className="scrol" key={index}>
-                                <img src={item} alt="journey" />
+                                <img src={item} alt="journey" loading="lazy" />
+                                
                             </div>
 
                         ))

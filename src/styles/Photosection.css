@@ -122,3 +122,35 @@
 
 
 
+@media (max-width: 768px) {
+
+  .photo-main-section {
+    position: relative;
+  }
+
+  .photo-main-section::after {
+    content: "👉 Swipe";
+    position: absolute;
+    right: 30px;
+    top: 40px;
+    font-size: 17px;
+    color: #333;
+    animation: swipeHint 1.5s infinite;
+    pointer-events: none;
+  }
+
+  @keyframes swipeHint {
+    0% {
+      transform: translateX(0);
+      opacity: .5;
+    }
+    50% {
+      transform: translateX(12px);
+      opacity: 1;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: .5;
+    }
+  }
+}

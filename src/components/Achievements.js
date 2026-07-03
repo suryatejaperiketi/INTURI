@@ -35,6 +35,7 @@ const ImageGallery = ({ images }) => (
                 src={img}
                 alt={`achievement-${index}`}
                 className="achievement-img"
+                loading="lazy"
             />
         ))}
     </div>
