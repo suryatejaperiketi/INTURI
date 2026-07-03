@@ -2,15 +2,21 @@ import React, { useState, useEffect, useRef, useCallback } from "react";
 import logo from "../essets/logo.png";
 import "../styles/Navbar.css";
 import { NavLink, useLocation } from "react-router-dom";
+import Aadabiddanidhiimg from "../essets/sch1.png";
+import Sthreeshakthiimg from "../essets/sc6.png";
+import Tallikivandanamimg from "../essets/sc3.png";
+import Deepamimg from "../essets/sc5.png";
+import Annadatasukhibhavaimg from "../essets/sc4.png";
+import Annacanteenimg from "../essets/sc1.png";
 
-import {
-  FaFemale,
-  FaBus,
-  FaSchool,
-  FaFireAlt,
-  FaTractor,
-  FaUtensils,
-} from "react-icons/fa";
+// import {
+//   FaFemale,
+//   FaBus,
+//   FaSchool,
+//   FaFireAlt,
+//   FaTractor,
+//   FaUtensils,
+// } from "react-icons/fa";
 
 const tdpWings = [
   "Telugu Yuvatha",
@@ -35,7 +41,7 @@ const tdpWings = [
 
 const schemes = [
   {
-    icon: <FaFemale />,
+    image: Aadabiddanidhiimg,
     name: "Aadabidda Nidhi",
     path: "/aadabidda-nidhi",
     sub: "Women's Financial Aid",
@@ -44,7 +50,7 @@ const schemes = [
   },
 
   {
-    icon: <FaBus />,
+    image: Sthreeshakthiimg,
     name: "Sthree Shakthi",
     path: "/free-bus",
     sub: "Free Bus Travel for Women",
@@ -53,7 +59,7 @@ const schemes = [
   },
 
   {
-    icon: <FaSchool />,
+    image: Tallikivandanamimg,
     name: "Talliki Vandanam",
     path: "/talliki-vandhanam",
     sub: "Mother's Salutation",
@@ -62,7 +68,7 @@ const schemes = [
   },
 
   {
-    icon: <FaFireAlt />,
+    image: Deepamimg,
     name: "Deepam 2.0",
     path: "/deepam-gas",
     sub: "Free LPG Gas Cylinders",
@@ -71,7 +77,7 @@ const schemes = [
   },
 
   {
-    icon: <FaTractor />,
+    image: Annadatasukhibhavaimg,
     name: "Annadata Sukhibhava",
     path: "/annadata-sukhi-bhava",
     sub: "Farmers' Financial Support",
@@ -80,7 +86,7 @@ const schemes = [
   },
 
   {
-    icon: <FaUtensils />,
+    image: Annacanteenimg,
     name: "Anna Canteen",
     path: "/anna-canteen",
     sub: "Affordable Meals for Everyone",
@@ -284,7 +290,9 @@ const Navbar = () => {
             }}
           >
             <div className="sc-top">
-              <span className="sc-icon">{s.icon}</span>
+              <span className="sc-icon">
+                <img src={s.image} alt={s.name} />
+              </span>
 
               <div>
                 <div className="sc-num">Scheme 0{i + 1}</div>

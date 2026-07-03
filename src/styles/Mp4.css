@@ -1,11 +1,14 @@
+
+
 .video-gallery-section {
-  padding: 60px 20px;
-  background: #f8f9fa;
+  padding: 20px 0;
 }
 
 .video-container {
   max-width: 1400px;
+  width: 100%;
   margin: auto;
+  padding: 20px;
 }
 
 .vedio-gall-heading {
@@ -15,82 +18,42 @@
   margin-bottom: 40px;
 }
 
+/* Grid Layout */
 .vedios-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 30px;
 }
 
+/* Card */
 .video-card {
-  margin: 0;
-  overflow: hidden;
-  border-radius: 12px;
   background: #fff;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  text-decoration: none !important;
-  color: inherit !important;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
 }
 
-.video-caption {
-  padding: 12px;
-  font-size: 15px;
-  font-weight: 600;
-  text-align: center;
-  color: #333;
-  min-height: 55px;
+.video-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.photo-main-section a {
-  text-decoration: none !important;
-  color: inherit;
-}
-
-a{
-  text-decoration: none;
-  color: inherit;
-}
-
-.image-video {
-  width: 100%;
-  display: block;
-  transition: 0.3s;
-}
-
-
-
-.thumbnail-wrapper {
-  position: relative;
-}
-
-.video-thumbnail {
+/* Video */
+.videos iframe {
   width: 100%;
   height: 250px;
-  object-fit: cover;
+  border: none;
   display: block;
 }
 
-.play-button {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  width: 60px;
-  height: 60px;
-  transform: translate(-50%, -50%);
-  background: rgba(255, 0, 0, 0.9);
-  border-radius: 50%;
-  color: white;
-  font-size: 28px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.video-card h4 {
-  padding: 15px;
+/* Title */
+.ved-cap {
   text-align: center;
-  font-size: 18px;
+  padding: 15px;
   margin: 0;
-  text-decoration: none !important;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 /* Tablet */
@@ -106,11 +69,11 @@ a{
     grid-template-columns: 1fr;
   }
 
-  .video-thumbnail {
+  .videos iframe {
     height: 220px;
   }
 
   .vedio-gall-heading {
-    font-size: 30px;
+    font-size: 32px;
   }
 }
