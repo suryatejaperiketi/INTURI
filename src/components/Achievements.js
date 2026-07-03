@@ -134,7 +134,7 @@ const Achievements = () => {
                 ))}
 
                 <h3 className="ramayapatnam-title">
-                    Ramayapatnam Port
+                    RAMAYAPATNAM PORT
                 </h3>
 
                 <div className="card mb-4 achievemts-section">
