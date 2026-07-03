@@ -49,7 +49,7 @@ function AnnadathaSukhibhava() {
       <FaUserTie />
     </div>
 
-    <div>
+    <div className="small-card">
       <h5>Beneficiaries</h5>
       <p>Eligible Farmers of Andhra Pradesh</p>
     </div>
@@ -60,7 +60,7 @@ function AnnadathaSukhibhava() {
       <FaMoneyBillWave />
     </div>
 
-    <div>
+    <div className="small-card">
       <h5>Benefit</h5>
       <p>₹20,000 Financial Assistance / Year</p>
     </div>
@@ -71,7 +71,7 @@ function AnnadathaSukhibhava() {
       <FaCalendarAlt />
     </div>
 
-    <div>
+    <div className="small-card">
       <h5>Launched On</h5>
       <p>20 June 2025</p>
     </div>
@@ -82,7 +82,7 @@ function AnnadathaSukhibhava() {
       <GiWheat />
     </div>
 
-    <div>
+    <div className="small-card">
       <h5>Category</h5>
       <p>Farmer Welfare Scheme</p>
     </div>

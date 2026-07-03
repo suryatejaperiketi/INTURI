@@ -46,7 +46,7 @@ function ThallikiVandanam() {
   <div className="info-icon beneficiaries">
     <MdFamilyRestroom />
   </div>
-  <div>
+  <div className="small-card">
     <h5>Beneficiaries</h5>
     <p>Eligible Mothers & School-going Children</p>
   </div>
@@ -56,7 +56,7 @@ function ThallikiVandanam() {
   <div className="info-icon benefit">
     <FaGraduationCap />
   </div>
-  <div>
+  <div className="small-card">
     <h5>Benefit</h5>
     <p>₹15,000 per Child / Year</p>
   </div>
@@ -66,7 +66,7 @@ function ThallikiVandanam() {
   <div className="info-icon launch">
     <FaCalendarAlt />
   </div>
-  <div>
+  <div className="small-card">
     <h5>Launched On</h5>
     <p>12 June 2025</p>
   </div>
@@ -76,7 +76,7 @@ function ThallikiVandanam() {
   <div className="info-icon category">
     <FaBookOpen />
   </div>
-  <div>
+  <div className="small-card">
     <h5>Category</h5>
     <p>Education & Family Welfare Scheme</p>
   </div>

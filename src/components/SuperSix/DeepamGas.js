@@ -43,7 +43,7 @@ function DeepamGas() {
             <div className="info-icon beneficiaries">
               <FaUsers />
             </div>
-            <div>
+            <div className="small-card">
               <h5>Beneficiaries</h5>
               <p>Eligible Families of Andhra Pradesh</p>
             </div>
@@ -53,7 +53,7 @@ function DeepamGas() {
             <div className="info-icon benefit-fire">
               <FaFire />
             </div>
-            <div>
+            <div className="small-card">
               <h5>Benefit</h5>
               <p>3 Free LPG Cylinders / Year</p>
             </div>
@@ -63,7 +63,7 @@ function DeepamGas() {
             <div className="info-icon launch">
               <FaCalendarAlt />
             </div>
-            <div>
+            <div className="small-card">
               <h5>Launched On</h5>
               <p>31 Oct 2024</p>
             </div>
@@ -73,7 +73,7 @@ function DeepamGas() {
             <div className="info-icon category">
               <FaTag />
             </div>
-            <div>
+            <div className="small-card">
               <h5>Category</h5>
               <p>Household Welfare Scheme</p>
             </div>
