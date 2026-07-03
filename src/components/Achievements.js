@@ -18,7 +18,7 @@ import acc3 from "../essets/ccroad3.png";
 import acc4 from "../essets/tank.png";
 
 import port from "../essets/port1.png";
-import cargo from "../essets/port2.png";
+import cargo from "../essets/port.png";
 import rail from "../essets/port3.png";
 import cargo2 from "../essets/port4.png";
 
@@ -134,7 +134,7 @@ const Achievements = () => {
                 ))}
 
                 <h3 className="ramayapatnam-title">
-                    Ramayapatnam
+                    Ramayapatnam Port
                 </h3>
 
                 <div className="card mb-4 achievemts-section">
