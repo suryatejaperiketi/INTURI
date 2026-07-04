@@ -13,6 +13,7 @@ import img1 from "../../essets/anna.png";
 import img2 from "../../essets/annacanteen1.jpg";
 import img3 from "../../essets/annacanteen2.jpg";
 import img4 from "../../essets/annacanteen3.jpg";
+import annacan from "../../essets/sc1.png";
 
 function  AnnaCanteen() {
   const gallery = [img1, img2, img3, img4];
@@ -23,7 +24,7 @@ function  AnnaCanteen() {
 
         <div className="scheme-header">
           <div className="scheme-icon">
-            <MdRestaurant />
+            <img src={annacan} alt="Anna Canteen" className="scheme-icon-img" />
           </div>
 
           <div>

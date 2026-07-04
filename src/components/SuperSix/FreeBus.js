@@ -5,6 +5,7 @@
   import img2 from "../../essets/sthreeshakthi2.jpg";
   import img3 from "../../essets/sthreeshakthi3.jpg";
   import img4 from "../../essets/sthreeshakthi4.jpg";
+  import sthreeshakthiImg from "../../essets/sc6.png";
 
   import {
   FaFemale,
@@ -22,7 +23,7 @@
 
           <div className="scheme-header">
             <div className="scheme-icon">
-              <FaFemale />
+              <img src={sthreeshakthiImg} alt="Sthree Shakthi" className="scheme-icon-img" />
             </div>
 
             <div>

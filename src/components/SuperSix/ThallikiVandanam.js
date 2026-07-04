@@ -5,10 +5,11 @@ import img1 from "../../essets/Tallivandhanam.jpg";
 import img2 from "../../essets/Tallivandhanam1.jpg";
 import img3 from "../../essets/Tallivandhanam3.jpg";
 import img4 from "../../essets/Tallivandhanam2.jpg";
+import thallikiImg from "../../essets/sc3.png";
 
 import { MdFamilyRestroom } from "react-icons/md";
 import {
-  FaFemale,
+
   FaGraduationCap,
   FaCalendarAlt,
   FaBookOpen
@@ -21,7 +22,9 @@ function ThallikiVandanam() {
     <section className="freebus-section">
       <div className="scheme-card-six">
         <div className="scheme-header">
-          <div className="scheme-icon"> <FaFemale /></div>
+          <div className="scheme-icon">
+           <img src={thallikiImg} alt="Talliki Vandanam" className="scheme-icon-img" />
+          </div>
 
           <div>
             <h2>Talliki Vandanam</h2>

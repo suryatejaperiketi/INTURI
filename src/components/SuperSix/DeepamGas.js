@@ -1,6 +1,5 @@
 import React from "react";
 import "../../styles/FreeBus.css";
-import { Cylinder } from "lucide-react";
 
 import { FaUsers, FaFire, FaCalendarAlt, FaTag } from "react-icons/fa";
 
@@ -9,6 +8,7 @@ import img1 from "../../essets/deepam1.webp";
 import img2 from "../../essets/deepam.png";
 import img3 from "../../essets/deepam2.jpg";
 import img4 from "../../essets/deepam3.jpg";
+import deepamImg from "../../essets/sc5.png";
 
 function DeepamGas() {
   const gallery = [img1, img2, img3, img4];
@@ -18,7 +18,7 @@ function DeepamGas() {
       <div className="scheme-card-six">
         <div className="scheme-header">
           <div className="scheme-icon">
-            <Cylinder size={34} color="#ff9800" />
+            <img src={deepamImg} alt="Deepam 2.0" className="scheme-icon-img" />
           </div>
 
           <div>

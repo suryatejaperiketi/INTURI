@@ -4,6 +4,7 @@ import img1 from "../../essets/annadhata1.jpg";
 import img2 from "../../essets/annadhata3.jpg";
 import img3 from "../../essets/annadhata4.jpg";
 import img4 from "../../essets/annadhata2.jpg";
+import annadata from "../../essets/sc4.png";
 
 import {
   FaUserTie,
@@ -22,7 +23,7 @@ function AnnadathaSukhibhava() {
 
         <div className="scheme-header">
           <div className="scheme-icon">
-            <GiWheat />
+            <img src={annadata} alt="Anna Canteen" className="scheme-icon-img" />
           </div>
 
           <div>
