@@ -1,8 +1,8 @@
 import React, { useRef } from "react";
 import "../styles/Mp3.css";
-import audio1 from "../essets/Kadali-Randi-Telugu-Desa-Karyakarthalara.mp3";
-import audio2 from "../essets/పానకాల-నారసింహుడే-సాంగ్.mp3";
-import audio3 from "../essets/Nayakudaa-Nayakudaa-Mallee-Nuvve-Raavaali.mp3";
+import audio1 from "../essets/audio1.mp3";
+import audio2 from "../essets/audio2.mp3";
+import audio3 from "../essets/audio3.mp3";
 
 function Mp3() {
   const audioRefs = useRef([]);
