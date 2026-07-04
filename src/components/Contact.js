@@ -43,9 +43,9 @@ const Contact = () => {
                             <p class="card-text"><strong>MANDAL:- </strong> KANDUKUR</p>
                             <p class="card-text"><strong>DISTRICT:- </strong> PRAKASAM </p>
                             <p class="card-text"><strong>STATE:-  </strong> ANDHRA PRADESH</p>
-                            <p class="card-text"><strong>PIN CODE:-  </strong> 523105</p>
-                            <p class="card-text"><strong>E-MAIL:-  </strong> inrforkandukuru@gmail.com</p>
-                            <p class="card-text"><strong>PHONE NUMBER:-  </strong> 9849999999</p>
+                            <p class="card-text"><strong>PIN CODE:-  </strong>523105</p>
+                            <p class="card-text"><strong>E-MAIL:-  </strong>XXXXXgmail.com</p>
+                            <p class="card-text"><strong>PHONE NUMBER:-  </strong>+91 XXXXXXXXXX</p>
                         </div>
                     </div>
                     <div class="col-md-6">

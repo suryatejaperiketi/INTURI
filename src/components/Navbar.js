@@ -9,14 +9,6 @@ import Deepamimg from "../essets/sc5.png";
 import Annadatasukhibhavaimg from "../essets/sc4.png";
 import Annacanteenimg from "../essets/sc1.png";
 
-// import {
-//   FaFemale,
-//   FaBus,
-//   FaSchool,
-//   FaFireAlt,
-//   FaTractor,
-//   FaUtensils,
-// } from "react-icons/fa";
 
 const tdpWings = [
   "Telugu Yuvatha",

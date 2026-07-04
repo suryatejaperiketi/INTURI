@@ -248,7 +248,7 @@ const Cmrf = () => {
 
         <h4 className="cmrf-subhed">
           Beyond politics, eligibility is standard till now 1313 people in
-          Kandukuru constituency. 10.42 crores CMRF funds have been provided.
+          Kandukuru constituency. 11 +crores CMRF funds have been provided.
         </h4>
         <div className="row mb-4">
           <div className="col-md-4 mb-2">
