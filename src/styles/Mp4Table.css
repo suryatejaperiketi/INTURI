@@ -1,0 +1,17 @@
+.mp4-table th,
+.mp4-table td {
+  padding: 22px 18px !important;
+  vertical-align: middle;
+}
+
+.mp4-table tbody tr {
+  border-bottom: 1px solid #e9ecef;
+}
+
+.mp4-table .btn {
+  min-width: 70px;
+}
+
+.table{
+    padding: .1rem .1rem !important;
+}

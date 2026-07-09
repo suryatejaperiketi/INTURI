@@ -84,7 +84,7 @@ tbody td {
   color: #2563eb;
 }
 
-.view-btn,
+
 .edit-btn,
 .delete-btn {
   border: none;
@@ -92,11 +92,6 @@ tbody td {
   border-radius: 5px;
   cursor: pointer;
   margin-right: 5px;
-}
-
-.view-btn {
-  background: #2563eb;
-  color: #fff;
 }
 
 .edit-btn {

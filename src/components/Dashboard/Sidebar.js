@@ -77,14 +77,14 @@ function Sidebar() {
         </li>
 
         <li>
-          <NavLink to="/dashboard/grievances" className="menu-link">
+          <NavLink to="/dashboard/mp3-table" className="menu-link">
             <MdAudiotrack />
             <span>Mp3</span>
           </NavLink>
         </li>
 
          <li>
-          <NavLink to="/dashboard/communication" className="menu-link">
+          <NavLink to="/dashboard/mp4-table" className="menu-link">
             <IoVideocam/>
             <span>Mp4 / Videos</span>
           </NavLink>

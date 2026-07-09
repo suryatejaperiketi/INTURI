@@ -102,9 +102,6 @@ const Development = () => {
                 <td>{item.date}</td>
 
                 <td>
-                  <button className="view-btn">
-                    View
-                  </button>
 
                   <button className="edit-btn">
                     Edit
