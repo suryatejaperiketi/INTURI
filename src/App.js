@@ -1,63 +1,57 @@
-import { Routes, Route } from 'react-router-dom';
-import { useState, useEffect } from 'react';
-import './App.css';
-import Navbar from './components/Navbar';
-import Landingpage from './components/Landingpage';
-import Aboutus from './components/aboutsection/Aboutus';
-import Achievements from './components/Achievements';
-import Photoslanding from './components/gallery/Photoslanding';
-import Videos from './components/gallery/Videos';
-import Press from './components/gallery/Press';
-import Accomplishments from './components/Accomplishments';
-import Contact from './components/Contact';
-import Cmrf from './components/Cmrf';
-import AnnadathaSukhibhava from './components/SuperSix/AnnadathaSukhibhava';
-import DeepamGas from './components/SuperSix/DeepamGas';
-import FreeBus from './components/SuperSix/FreeBus';
-import ThallikiVandanam from './components/SuperSix/ThallikiVandanam';
-import AdPopup from './components/AdPopup';
-import AadabiddaNidhi from './components/SuperSix/AadabiddaNidhi';
-import AnnaCanteen from './components/SuperSix/AnnaCanteen';
-import Mp3 from './components/Mp3';
-import Mp4 from './components/Mp4';
+import { Routes, Route } from "react-router-dom";
+import "./App.css";
 
+import Landingpage from "./components/Landingpage";
+import Aboutus from "./components/aboutsection/Aboutus";
+import Achievements from "./components/Achievements";
+import Photoslanding from "./components/gallery/Photoslanding";
+import Videos from "./components/gallery/Videos";
+import Press from "./components/gallery/Press";
+import Accomplishments from "./components/Accomplishments";
+import Contact from "./components/Contact";
+import Cmrf from "./components/Cmrf";
+import AnnadathaSukhibhava from "./components/SuperSix/AnnadathaSukhibhava";
+import DeepamGas from "./components/SuperSix/DeepamGas";
+import FreeBus from "./components/SuperSix/FreeBus";
+import ThallikiVandanam from "./components/SuperSix/ThallikiVandanam";
+import AadabiddaNidhi from "./components/SuperSix/AadabiddaNidhi";
+import AnnaCanteen from "./components/SuperSix/AnnaCanteen";
+import Mp3 from "./components/Mp3";
+import Mp4 from "./components/Mp4";
+import Login from "./components/Login";
+import PublicLayout from "./components/PublicLayout";
+import AdminLayout from "./components/Dashboard/AdminLayout";
+import DashboardLayout from "./components/Dashboard/DashboardLayout";
 
 function App() {
-  const [showPopup, setShowPopup] = useState(false);
- 
-  useEffect(() => {
-    // Show popup after 500ms so page loads first
-    const timer = setTimeout(() => setShowPopup(true), 500);
-    return () => clearTimeout(timer);
-  }, []);
   return (
-        <div>
-      {showPopup && <AdPopup onClose={() => setShowPopup(false)} />}
-   
-      <div className='navbar-main'>
-        <Navbar />
-      </div >
-      <div className='land-section'>
+    <div>
       <Routes>
-        <Route path="/" element={<Landingpage />} />
-        <Route path="/about" element={<Aboutus />} />
-        <Route path="/achievements" element={<Achievements />} />
-        <Route path="/cmrf" element={<Cmrf />} />
-        <Route path="/Photoslanding/*" element={<Photoslanding />} />
-        <Route path='/videos' element={<Videos />} />
-        <Route path='/press' element={<Press />} />
-        <Route path='/accomplishments' element={<Accomplishments />} />
-        <Route path='/contact' element={<Contact />} />
-        <Route path='/aadabidda-nidhi' element={<AadabiddaNidhi/>} />
-        <Route path='/annadata-sukhi-bhava' element={<AnnadathaSukhibhava/>} />
-        <Route path='/deepam-gas' element={<DeepamGas/>} />
-        <Route path='/free-bus' element={<FreeBus/>} />
-        <Route path='/talliki-vandhanam' element={<ThallikiVandanam/>} />
-        <Route path='/anna-canteen' element={<AnnaCanteen/>} />
-        <Route path='/mp3' element={<Mp3/>} />
-        <Route path='/mp4' element={<Mp4/>} />
+        <Route element={<PublicLayout />}>
+          <Route path="/" element={<Landingpage />} />
+          <Route path="/about" element={<Aboutus />} />
+          <Route path="/achievements" element={<Achievements />} />
+          <Route path="/cmrf" element={<Cmrf />} />
+          <Route path="/Photoslanding/*" element={<Photoslanding />} />
+          <Route path="/videos" element={<Videos />} />
+          <Route path="/press" element={<Press />} />
+          <Route path="/accomplishments" element={<Accomplishments />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/aadabidda-nidhi" element={<AadabiddaNidhi />} />
+          <Route path="/annadata-sukhi-bhava"element={<AnnadathaSukhibhava />}/>
+          <Route path="/deepam-gas" element={<DeepamGas />} />
+          <Route path="/free-bus" element={<FreeBus />} />
+          <Route path="/talliki-vandhanam" element={<ThallikiVandanam />} />
+          <Route path="/anna-canteen" element={<AnnaCanteen />} />
+          <Route path="/mp3" element={<Mp3 />} />
+          <Route path="/mp4" element={<Mp4 />} />
+        </Route>
+
+        <Route element={<AdminLayout />}>
+          <Route path="/login" element={<Login />} />
+          <Route path="/dashboard/*" element={<DashboardLayout/>} />
+        </Route>
       </Routes>
-      </div>
     </div>
   );
 }

@@ -1,0 +1,8 @@
+.admin-main-content {
+  margin-top: 60px; 
+  margin-left: 270px; 
+  padding: 20px;
+  background: #f5f6fa;
+  min-height: calc(100vh - 60px);
+ 
+}

@@ -1,0 +1,157 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.sidebar {
+  width: 270px;
+  background:#0B1F3A;
+  color:#fff;
+  border-right: 1px solid #e4e4e4;
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
+}
+
+
+.admin-sidebar {
+  width: 270px;
+  background:#26204a;
+  color:#fff;
+  border-right: 1px solid #e4e4e4;
+  height: calc(100vh - 60px);
+  position: fixed;
+  top: 60px;
+  left: 0;
+  overflow-y: auto;
+  overflow-x: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  font-family: "Poppins", sans-serif;
+  padding-bottom: 20px;
+}
+
+/* Profile */
+
+.sidebar-profile{
+    text-align:center;
+    padding:25px 15px;
+    border-bottom:1px solid rgba(255,255,255,0.1);
+}
+
+.profile-img{
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    border:3px solid #fff;
+    object-fit:cover;
+}
+
+.sidebar-profile h4{
+    margin-top:10px;
+    font-size:16px;
+    color:#fff;
+}
+
+.sidebar-profile p{
+    margin-top:5px;
+    font-size:13px;
+    color:#d5d5d5;
+}
+
+/* Menu */
+
+.menu{
+    list-style:none;
+}
+
+.menu li{
+    width:100%;
+}
+
+.menu-link{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    color:#fff;
+    text-decoration:none;
+    padding:16px 20px;
+    transition:0.3s;
+    font-size:15px;
+}
+
+ .sidebar  ul {
+    padding-left: 0rem !important;
+}
+.menu-link:hover{
+    background:#342d65;
+    color:#fff;
+}
+
+.menu-link.active{
+    background:#FFD100;
+    border-left:4px solid #4da3ff;
+    color: #222;
+    font-weight: 700;
+}
+
+/* Icon */
+
+.menu-link svg{
+    font-size:16px;
+    min-width:20px;
+}
+
+/* Dropdown */
+
+.dropdown{
+    cursor:pointer;
+    justify-content:space-between;
+}
+
+.left{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+/* Submenu */
+
+.submenu{
+    list-style:none;
+    background:#1d173e;
+}
+
+.submenu li a{
+    display:block;
+    color:#cfcfcf;
+    text-decoration:none;
+    padding:12px 55px;
+    font-size:13px;
+    transition:0.3s;
+}
+
+.submenu li a:hover{
+    background:#17365D;
+    color:#fff;
+}
+
+/* Scrollbar */
+
+.sidebar::-webkit-scrollbar{
+    width:4px;
+}
+
+.sidebar::-webkit-scrollbar-thumb{
+    background:#FFD100;
+}
+
+
