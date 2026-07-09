@@ -8,6 +8,7 @@ import Tallikivandanamimg from "../essets/sc3.png";
 import Deepamimg from "../essets/sc5.png";
 import Annadatasukhibhavaimg from "../essets/sc4.png";
 import Annacanteenimg from "../essets/sc1.png";
+import { useNavigate } from "react-router-dom";
 
 
 const tdpWings = [
@@ -88,6 +89,7 @@ const schemes = [
 ];
 
 const Navbar = () => {
+  const navigate = useNavigate();
   const [showAchievements, setShowAchievements] = useState(false);
   const [showBeneficiary, setShowBeneficiary] = useState(false);
   const [showMultimedia, setShowMultimedia] = useState(false);
@@ -548,7 +550,7 @@ const Navbar = () => {
               </li>
 
               <li className="nav-item d-flex align-items-center">
-                <button className="appoint-btn" type="button">
+                <button className="appoint-btn" type="button" onClick={() =>navigate("/login")}>
                   Login
                 </button>
               </li>
