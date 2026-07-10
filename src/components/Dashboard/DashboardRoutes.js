@@ -10,6 +10,8 @@ import Mp3Table from "./Mp3Table";
 import Mp3Form from "./Mp3Form";
 import Mp4Table from "./Mp4Table";
 import Mp4Form from "./Mp4Form";
+import BeneficiariesForm from "./BeneficiariesForm";
+import BeneficiariesTable from "./BeneficiariesTable";
 
 
 function DashboardRoutes() {
@@ -26,6 +28,8 @@ function DashboardRoutes() {
       <Route path="/mp3-form" element={<Mp3Form/>} />
       <Route path="/mp4-table" element={<Mp4Table/>} />
       <Route path="/mp4-form" element={<Mp4Form/>} />
+      <Route path="/beneficiaries-table" element={<BeneficiariesTable/>} />
+      <Route path="/beneficiaries-form" element={<BeneficiariesForm/>} />
     </Routes>
   );
 }

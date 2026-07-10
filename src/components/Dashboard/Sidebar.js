@@ -31,8 +31,8 @@ function Sidebar() {
           alt="profile"
           className="profile-img"
         />
-        <h4>Hon. MLA</h4>
-        <p>Welcome Back!</p>
+        <h4>INR MLA</h4>
+        <p>Welcome Back !</p>
       </div>
 
       {/* Menu */}
@@ -63,7 +63,7 @@ function Sidebar() {
 
 
         <li>
-          <NavLink to="/dashboard/beneficiaries" className="menu-link">
+          <NavLink to="/dashboard/beneficiaries-table" className="menu-link">
             <FaHandHoldingHeart />
             <span>Beneficiaries</span>
           </NavLink>
