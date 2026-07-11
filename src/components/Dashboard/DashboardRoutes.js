@@ -12,6 +12,7 @@ import Mp4Table from "./Mp4Table";
 import Mp4Form from "./Mp4Form";
 import BeneficiariesForm from "./BeneficiariesForm";
 import BeneficiariesTable from "./BeneficiariesTable";
+import Voters from "./Voters";
 
 
 function DashboardRoutes() {
@@ -19,6 +20,7 @@ function DashboardRoutes() {
     <Routes>
       <Route path="/" element={<DashboardHome/>} />
       <Route path="/dashboard-home" element={<DashboardHome/>} />
+      <Route path="/voters" element={<Voters/>} />
       <Route path="/admincontact" element={<AdminContactus/>} />
       <Route path="/development" element={<Development/>} />
       <Route path="/development-form" element={<DevelopmentForm/>} />
