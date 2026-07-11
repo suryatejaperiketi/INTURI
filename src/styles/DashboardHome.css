@@ -87,14 +87,13 @@
 
 .main-grid .card{
   height: 100%;
-  max-height: 370px;
+  max-height: 390px;
 }
 
 .card h3 {
   font-size: 16px;
   font-weight: 700;
   color: #0f172a;
-  margin: 0;
 }
 
 .card-header {
@@ -268,8 +267,13 @@
 }
 
 .gender-legend {
-  flex: 1;
-  margin-top: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.gender-item:nth-child(3) {
+  grid-column: 1;
 }
 
 .gender-legend .legend-item p {
@@ -473,8 +477,8 @@
 
 
 .ned-fol-carad{
-    display: flex;
-    justify-content:flex-start;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     gap: 20px;
 }
 

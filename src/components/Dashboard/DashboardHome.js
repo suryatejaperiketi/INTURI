@@ -14,16 +14,17 @@ import {
 import { PieChart, Pie, Cell, ResponsiveContainer } from "recharts";
 
 const workData = [
-  { name: "Completed", value: 98, color: "#3b82f6" },
-  { name: "In Progress", value: 102, color: "#22c55e" },
-  { name: "Pending", value: 48, color: "#f59e0b" },
+  { name: "Completed", value: 188, color: "#3b82f6" },
+  { name: "In Progress", value: 96, color: "#22c55e" },
+  { name: "Pending", value: 42, color: "#f59e0b" },
 ];
 
 const totalWorks = workData.reduce((sum, item) => sum + item.value, 0);
 
 const genderData = [
-  { name: "Male", value: 65210, color: "#3b82f6" },
-  { name: "Female", value: 60135, color: "#ec4899" },
+  { name: "Male", value: 110450, color: "#3b82f6" },
+  { name: "Female", value: 108350, color: "#ec4899" },
+  { name: "Others", value: 161, color: "#e9ec48" },
 ];
 
 const totalVoters = genderData.reduce((sum, item) => sum + item.value, 0);
@@ -62,7 +63,7 @@ function DashboardHome() {
 
           <div>
             <span>Development Works</span>
-            <h2>248</h2>
+            <h2>326</h2>
 
             <p className="growth">
               <FaArrowUp /> 12.4% this month
@@ -76,8 +77,8 @@ function DashboardHome() {
           </div>
 
           <div>
-            <span>Beneficiaries</span>
-            <h2>18,742</h2>
+            <span> Govt Beneficiaries</span>
+            <h2>54,280</h2>
 
             <p className="growth">
               <FaArrowUp /> 7.8% this month
@@ -92,7 +93,7 @@ function DashboardHome() {
 
           <div>
             <span>CM Relief Fund</span>
-            <h2>₹2,45,60,000</h2>
+            <h2>₹11,07,60,000</h2>
 
             <p className="growth">
               <FaArrowUp /> 8.3% this month
@@ -286,7 +287,7 @@ function DashboardHome() {
 
           <div className="event">
             <div className="date-box">
-              MAY
+              AUG
               <strong>20</strong>
             </div>
 
@@ -298,8 +299,8 @@ function DashboardHome() {
 
           <div className="event">
             <div className="date-box">
-              MAY
-              <strong>25</strong>
+              AUG
+              <strong>28</strong>
             </div>
 
             <div>
@@ -310,7 +311,7 @@ function DashboardHome() {
 
           <div className="event">
             <div className="date-box">
-              MAY
+              OCT
               <strong>30</strong>
             </div>
 
@@ -338,7 +339,7 @@ function DashboardHome() {
             </span>
             <div>
               <h4>Follow up with Ward 12 regarding road work update</h4>
-              <p>20 May 2024, 11:00 AM</p>
+              <p>20 JULY 2024, 11:00 AM</p>
             </div>
           </div>
 
@@ -348,7 +349,7 @@ function DashboardHome() {
             </span>
             <div>
               <h4>Check Pending beneficiaries list</h4>
-              <p>21 May 2024, 09:30 AM</p>
+              <p>2 AUG 2024, 09:30 AM</p>
             </div>
           </div>
            <div className="note">
@@ -357,7 +358,7 @@ function DashboardHome() {
             </span>
             <div>
               <h4>Check Latest Cmrfunds</h4>
-              <p>21 May 2024, 09:30 AM</p>
+              <p>17 AUG 2024, 09:30 AM</p>
             </div>
           </div>
            <div className="note">
@@ -366,7 +367,7 @@ function DashboardHome() {
             </span>
             <div>
               <h4>Check Pending Development</h4>
-              <p>21 May 2024, 09:30 AM</p>
+              <p>7 SEP 2024, 09:30 AM</p>
             </div>
           </div>
         </div>
