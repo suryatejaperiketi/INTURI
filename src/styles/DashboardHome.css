@@ -85,6 +85,11 @@
   align-items: start;
 }
 
+.main-grid .card{
+  height: 100%;
+  max-height: 370px;
+}
+
 .card h3 {
   font-size: 16px;
   font-weight: 700;
@@ -258,13 +263,13 @@
 .gender-layout {
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  flex-direction: column;
   gap: 10px;
 }
 
 .gender-legend {
   flex: 1;
-  padding-left: 6px;
+  margin-top: 15px;
 }
 
 .gender-legend .legend-item p {
